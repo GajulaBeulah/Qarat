@@ -1,0 +1,82 @@
+import React from 'react';
+import { Link } from 'react-router-dom';
+import { ArrowRight, Boxes, Layers, Palette } from 'lucide-react';
+import './MaterialSupplyHome.css';
+
+const MaterialSupplyHome = () => {
+  return (
+    <section className="material-home-section">
+      <div className="material-home-container">
+        
+        {/* Left Side: Content */}
+        <div className="mhs-left-col">
+          <div className="mhs-eyebrow-container">
+            <span className="mhs-eyebrow-icon">❖</span>
+            <span className="mhs-eyebrow">Material Supply</span>
+          </div>
+          
+          <h2 className="mhs-title">Materials for Your Interior Project</h2>
+          <p className="mhs-desc">
+            Explore interior materials available through Qarat for ceiling, wall and decorative applications.
+          </p>
+          
+          <div className="mhs-actions">
+            <Link to="/material-supply" className="mhs-btn-primary">
+              Explore Materials <ArrowRight size={18} />
+            </Link>
+          </div>
+        </div>
+
+        {/* Right Side: 3 Tall Cards */}
+        <div className="mhs-right-col">
+          
+          {/* Card 1 */}
+          <Link to="/material-supply/gypsum-boards-ceiling-materials" className="mhs-card">
+            <img src="/images/project1.jpg" alt="Gypsum Boards & Ceiling" className="mhs-card-bg" />
+            <div className="mhs-card-content">
+              <div className="mhs-card-icon-wrapper">
+                <Boxes size={24} className="mhs-card-icon" />
+              </div>
+              <h3 className="mhs-card-title">Gypsum Boards & Ceiling Materials</h3>
+              <p className="mhs-card-desc">
+                Gypsum boards, ceiling materials and gypsum tiles for interior applications.
+              </p>
+            </div>
+          </Link>
+
+          {/* Card 2 */}
+          <Link to="/material-supply/panels" className="mhs-card">
+            <img src="/images/project3.jpg" alt="Panels" className="mhs-card-bg" />
+            <div className="mhs-card-content">
+              <div className="mhs-card-icon-wrapper">
+                <Layers size={24} className="mhs-card-icon" />
+              </div>
+              <h3 className="mhs-card-title">Panels</h3>
+              <p className="mhs-card-desc">
+                PVC panels, WPC panels, and fluted panels offering durability and aesthetic appeal.
+              </p>
+            </div>
+          </Link>
+
+          {/* Card 3 */}
+          <Link to="/material-supply/decorative-materials" className="mhs-card">
+            <img src="/images/project4.jpg" alt="Decorative Materials" className="mhs-card-bg" />
+            <div className="mhs-card-content">
+              <div className="mhs-card-icon-wrapper">
+                <Palette size={24} className="mhs-card-icon" />
+              </div>
+              <h3 className="mhs-card-title">Decorative Materials</h3>
+              <p className="mhs-card-desc">
+                Premium finishes including UV marble sheets and custom wallpapers.
+              </p>
+            </div>
+          </Link>
+
+        </div>
+
+      </div>
+    </section>
+  );
+};
+
+export default MaterialSupplyHome;

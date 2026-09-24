@@ -1,0 +1,184 @@
+.get-quote-page {
+  background-color: #F7F4EF;
+  min-height: 100vh;
+  padding: 80px 24px 100px;
+}
+
+.gq-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+@media (min-width: 992px) {
+  .gq-container {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+}
+
+/* Left: Form Area */
+.gq-form-section {
+  flex: 1.5;
+  background-color: #FFFFFF;
+  padding: 50px;
+  border-radius: 8px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.05);
+}
+
+.gq-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 32px;
+  font-weight: 700;
+  color: #24211E;
+  margin: 0 0 10px 0;
+}
+
+.gq-desc {
+  font-family: 'Manrope', sans-serif;
+  font-size: 1rem;
+  color: #6F6962;
+  margin: 0 0 30px 0;
+}
+
+.gq-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.gq-input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.gq-label {
+  font-family: 'Manrope', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #24211E;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.gq-input, .gq-select, .gq-textarea {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #E4DED5;
+  border-radius: 4px;
+  font-family: 'Manrope', sans-serif;
+  font-size: 1rem;
+  color: #24211E;
+  background-color: #FAFAFA;
+  transition: all 0.3s ease;
+}
+
+.gq-input:focus, .gq-select:focus, .gq-textarea:focus {
+  outline: none;
+  border-color: #B79A6B;
+  background-color: #FFFFFF;
+  box-shadow: 0 0 0 3px rgba(183, 154, 107, 0.1);
+}
+
+.gq-textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.gq-submit {
+  margin-top: 10px;
+  padding: 18px;
+  background-color: #24211E;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 4px;
+  font-family: 'Manrope', sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.gq-submit:hover {
+  background-color: #38342f;
+}
+
+/* Right: Direct Contact Area */
+.gq-contact-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.gq-contact-card {
+  background-color: #24211E;
+  color: #FFFFFF;
+  padding: 40px 30px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.gq-card-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0 0 15px 0;
+}
+
+.gq-card-desc {
+  font-family: 'Manrope', sans-serif;
+  font-size: 0.95rem;
+  color: #D8D2CA;
+  margin: 0 0 30px 0;
+}
+
+.gq-btn-whatsapp {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  padding: 16px;
+  background-color: #25D366;
+  color: #FFFFFF;
+  text-decoration: none;
+  font-family: 'Manrope', sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  border-radius: 4px;
+  margin-bottom: 15px;
+  transition: background-color 0.3s ease;
+}
+
+.gq-btn-whatsapp:hover {
+  background-color: #1ebe57;
+}
+
+.gq-btn-call {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  padding: 16px;
+  background-color: transparent;
+  border: 2px solid #FFFFFF;
+  color: #FFFFFF;
+  text-decoration: none;
+  font-family: 'Manrope', sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.gq-btn-call:hover {
+  background-color: #FFFFFF;
+  color: #24211E;
+}

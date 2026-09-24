@@ -1,0 +1,110 @@
+.faq-section {
+  padding: 100px 24px;
+  background-color: #24211E; /* Dark theme to contrast with the light reviews section */
+  color: #FFFFFF;
+}
+
+.faq-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.faq-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.faq-eyebrow {
+  display: inline-block;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #B79A6B; /* Brand Gold */
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 15px;
+  background-color: rgba(183, 154, 107, 0.1);
+  padding: 6px 16px;
+  border-radius: 30px;
+}
+
+.faq-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 38px;
+  font-weight: 700;
+  color: #FFFFFF;
+  margin: 0;
+}
+
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.faq-item-card {
+  background-color: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.faq-item-card:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.faq-item-card.active {
+  background-color: rgba(183, 154, 107, 0.05);
+  border-color: rgba(183, 154, 107, 0.3);
+}
+
+.faq-item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px;
+}
+
+.faq-question-text {
+  font-family: 'Manrope', sans-serif;
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: #FFFFFF;
+  margin: 0;
+  padding-right: 20px;
+}
+
+.faq-chevron {
+  color: #B79A6B;
+  transition: transform 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.faq-item-card.active .faq-chevron {
+  transform: rotate(180deg);
+}
+
+.faq-item-body {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease, padding 0.4s ease, opacity 0.3s ease;
+  opacity: 0;
+  padding: 0 24px;
+}
+
+.faq-item-card.active .faq-item-body {
+  max-height: 200px;
+  padding: 0 24px 24px 24px;
+  opacity: 1;
+}
+
+.faq-answer-text {
+  font-family: 'Manrope', sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.7);
+  margin: 0;
+}

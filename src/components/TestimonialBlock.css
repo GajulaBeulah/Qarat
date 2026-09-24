@@ -1,0 +1,144 @@
+.tb-section {
+  padding: 100px 24px;
+  background-color: #FDFBF7; /* Soft off-white to match the brand */
+  font-family: 'Manrope', sans-serif;
+  color: #24211E;
+}
+
+.tb-container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.tb-header {
+  text-align: center;
+  margin-bottom: 60px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.tb-eyebrow {
+  display: inline-block;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #B79A6B; /* Brand Gold */
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 12px;
+  background-color: rgba(183, 154, 107, 0.1);
+  padding: 6px 16px;
+  border-radius: 30px;
+}
+
+.tb-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #24211E;
+  margin: 0 0 16px 0;
+}
+
+.tb-subtitle {
+  font-size: 1.05rem;
+  color: #666666;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Horizontal Scrolling Layout */
+.tb-grid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 24px;
+  overflow-x: auto;
+  padding-bottom: 30px; /* Space for scrollbar or shadow */
+  scroll-snap-type: x mandatory;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.tb-grid::-webkit-scrollbar {
+  display: none;
+}
+
+/* Card Styling */
+.tb-card {
+  flex: 0 0 350px; /* Fixed width for cards in horizontal scroll */
+  scroll-snap-align: center;
+  background-color: #FFFFFF;
+  border-radius: 16px;
+  padding: 32px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+  border: 1px solid rgba(36, 33, 30, 0.03);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .tb-card {
+    flex: 0 0 280px; /* Slightly smaller on mobile */
+  }
+}
+
+.tb-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+}
+
+.tb-stars {
+  display: flex;
+  gap: 4px;
+  margin-bottom: 20px;
+}
+
+.tb-text {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #4A4A4A;
+  margin: 0 0 30px 0;
+  font-style: italic;
+  flex-grow: 1; /* Pushes author box to bottom */
+}
+
+/* Author Info */
+.tb-author-box {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  border-top: 1px solid rgba(36, 33, 30, 0.08);
+  padding-top: 20px;
+}
+
+.tb-author-avatar {
+  width: 48px;
+  height: 48px;
+  background-color: #24211E;
+  color: #FFFFFF;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Playfair Display', serif;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.tb-author-name {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #24211E;
+  margin: 0 0 4px 0;
+}
+
+.tb-author-loc {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #B79A6B;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin: 0;
+}

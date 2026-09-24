@@ -1,0 +1,260 @@
+.page-hero {
+  background-color: #24211E;
+  color: #FFFFFF;
+  padding: 100px 24px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.page-hero::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+  background-size: 50px 50px;
+  pointer-events: none;
+}
+
+.page-hero-container {
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+
+.page-eyebrow {
+  font-family: 'Manrope', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  color: #B79A6B;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.page-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 42px;
+  font-weight: 700;
+  margin: 0 0 20px 0;
+  color: #FFFFFF;
+}
+
+@media (min-width: 768px) {
+  .page-title {
+    font-size: 56px;
+  }
+}
+
+.page-desc {
+  font-family: 'Manrope', sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #D8D2CA;
+  margin: 0;
+}
+
+/* Common Page Padding */
+.page-section {
+  padding: 80px 24px;
+  background-color: #F7F4EF;
+}
+
+.page-container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+/* Category Grid on Index Page */
+.category-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+}
+
+@media (min-width: 768px) {
+  .category-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.cat-card {
+  background-color: #FFFFFF;
+  border-radius: 8px;
+  overflow: hidden;
+  text-decoration: none;
+  color: #24211E;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.cat-card:hover {
+  transform: translateY(-5px);
+}
+
+.cat-img-wrapper {
+  height: 250px;
+  overflow: hidden;
+}
+
+.cat-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.cat-card:hover .cat-img {
+  transform: scale(1.05);
+}
+
+.cat-content {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.cat-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0 0 15px 0;
+}
+
+.cat-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px 0;
+  flex: 1;
+}
+
+.cat-list li {
+  font-family: 'Manrope', sans-serif;
+  font-size: 0.95rem;
+  color: #6F6962;
+  margin-bottom: 8px;
+  padding-left: 15px;
+  position: relative;
+}
+
+.cat-list li::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: #B79A6B;
+}
+
+.cat-link {
+  font-family: 'Manrope', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #B79A6B;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: auto;
+}
+
+/* Detail Pages Layout */
+.detail-layout {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+@media (min-width: 992px) {
+  .detail-layout {
+    flex-direction: row;
+    gap: 80px;
+    align-items: flex-start;
+  }
+}
+
+.detail-sidebar {
+  flex: 0.3;
+  position: sticky;
+  top: 100px;
+  background-color: #FFFFFF;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.03);
+}
+
+.sidebar-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: #24211E;
+  margin: 0 0 20px 0;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #E4DED5;
+}
+
+.sidebar-nav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.sidebar-nav a {
+  font-family: 'Manrope', sans-serif;
+  font-size: 1rem;
+  color: #6F6962;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  display: block;
+}
+
+.sidebar-nav a:hover {
+  color: #B79A6B;
+}
+
+.detail-content {
+  flex: 0.7;
+}
+
+/* Service Block */
+.service-block {
+  background-color: #FFFFFF;
+  padding: 40px;
+  border-radius: 8px;
+  margin-bottom: 40px;
+  scroll-margin-top: 100px; /* For smooth anchor links */
+  box-shadow: 0 5px 20px rgba(0,0,0,0.03);
+}
+
+.service-block-img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+
+.service-block-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 32px;
+  font-weight: 700;
+  color: #24211E;
+  margin: 0 0 20px 0;
+}
+
+.service-block-desc {
+  font-family: 'Manrope', sans-serif;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: #6F6962;
+  margin: 0;
+}

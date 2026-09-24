@@ -1,0 +1,202 @@
+.material-home-section {
+  padding: 100px 24px;
+  background-color: #FDFBF7;
+  font-family: 'Manrope', sans-serif;
+  color: #24211E;
+}
+
+.material-home-container {
+  max-width: 1400px; /* Slightly wider to accommodate 3 cards comfortably */
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+@media (min-width: 1024px) {
+  .material-home-container {
+    flex-direction: row;
+    align-items: center;
+    gap: 60px;
+  }
+}
+
+/* Left Column */
+.mhs-left-col {
+  flex: 0 0 32%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.mhs-eyebrow-container {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background-color: rgba(183, 154, 107, 0.1);
+  padding: 8px 16px;
+  border-radius: 30px;
+  margin-bottom: 24px;
+  width: fit-content;
+}
+
+.mhs-eyebrow-icon {
+  color: #B79A6B;
+  font-size: 0.9rem;
+}
+
+.mhs-eyebrow {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #B79A6B;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.mhs-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 46px;
+  font-weight: 600;
+  line-height: 1.15;
+  color: #24211E;
+  margin: 0 0 24px 0;
+}
+
+.mhs-desc {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #666666;
+  margin: 0 0 40px 0;
+}
+
+.mhs-actions {
+  display: flex;
+  gap: 16px;
+}
+
+.mhs-btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  background-color: #B79A6B;
+  color: #FFFFFF;
+  padding: 16px 32px;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.mhs-btn-primary:hover {
+  background-color: #a3875a;
+  transform: translateY(-2px);
+}
+
+/* Right Column (Cards) */
+.mhs-right-col {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding-bottom: 20px;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  gap: 20px;
+}
+.mhs-right-col::-webkit-scrollbar {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .mhs-right-col {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    /* Hide scrollbar for a clean look */
+    scrollbar-width: none; 
+    -ms-overflow-style: none;
+    padding-bottom: 10px;
+  }
+  .mhs-right-col::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.mhs-card {
+  position: relative;
+  flex: 0 0 280px; /* Fixed width for mobile horizontal scroll */
+  border-radius: 20px;
+  overflow: hidden;
+  text-decoration: none;
+  height: 400px;
+  background-color: #24211E;
+  transform: translateZ(0);
+  scroll-snap-align: start;
+}
+
+@media (min-width: 768px) {
+  .mhs-card {
+    height: 500px;
+    flex: 1 0 auto;
+    width: calc(33.333% - 14px); /* For 3 cards with 20px gaps */
+  }
+}
+
+.mhs-card-bg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+.mhs-card:hover .mhs-card-bg {
+  transform: scale(1.06);
+}
+
+.mhs-card-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 70%;
+  background: linear-gradient(to top, rgba(15, 20, 25, 0.95) 0%, rgba(15, 20, 25, 0.6) 50%, rgba(15, 20, 25, 0) 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 30px;
+  color: #FFFFFF;
+}
+
+.mhs-card-icon-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 54px;
+  height: 54px;
+  background-color: #FFFFFF;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.mhs-card-icon {
+  color: #24211E;
+}
+
+.mhs-card-title {
+  font-family: 'Manrope', sans-serif;
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin: 0 0 12px 0;
+  line-height: 1.3;
+}
+
+.mhs-card-desc {
+  font-size: 0.95rem;
+  color: rgba(255, 255, 255, 0.85);
+  line-height: 1.6;
+  margin: 0;
+}

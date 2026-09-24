@@ -1,0 +1,202 @@
+.about-page {
+  background-color: #FDFBF7;
+  color: #24211E;
+}
+
+.about-section {
+  padding: 100px 24px;
+}
+
+.about-container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+/* Intro Layout */
+.about-intro {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  margin-bottom: 100px;
+}
+
+@media (min-width: 992px) {
+  .about-intro {
+    flex-direction: row;
+    align-items: center;
+    gap: 80px;
+  }
+}
+
+.about-image-wrapper {
+  flex: 1;
+  position: relative;
+}
+
+.about-main-img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+}
+
+.about-text-content {
+  flex: 1;
+}
+
+.about-eyebrow {
+  display: inline-block;
+  font-family: 'Manrope', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #B79A6B;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  margin-bottom: 20px;
+}
+
+.about-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 42px;
+  font-weight: 700;
+  color: #24211E;
+  margin: 0 0 30px 0;
+  line-height: 1.2;
+}
+
+@media (min-width: 768px) {
+  .about-title {
+    font-size: 52px;
+  }
+}
+
+.about-desc {
+  font-family: 'Manrope', sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #6F6962;
+  margin: 0 0 20px 0;
+}
+
+/* Features Redesign */
+.about-features {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.feature-card {
+  display: flex;
+  flex-direction: column;
+  background-color: #FFFFFF;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.03);
+  border: 1px solid rgba(36, 33, 30, 0.04);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+@media (min-width: 992px) {
+  .feature-card {
+    flex-direction: row;
+    height: 400px;
+  }
+  
+  /* Alternate layout for the middle card */
+  .feature-card.reverse {
+    flex-direction: row-reverse;
+  }
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0,0,0,0.06);
+}
+
+.fc-img-wrapper {
+  flex: 1;
+  position: relative;
+  min-height: 250px;
+}
+
+.fc-img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.fc-content {
+  flex: 1.2;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.feature-icon-wrapper {
+  width: 50px;
+  height: 50px;
+  background-color: rgba(183, 154, 107, 0.1);
+  color: #B79A6B;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.feature-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: #24211E;
+  margin: 0 0 15px 0;
+}
+
+.feature-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.feature-list li {
+  font-family: 'Manrope', sans-serif;
+  font-size: 0.95rem;
+  color: #6F6962;
+  margin-bottom: 12px;
+  padding-left: 20px;
+  position: relative;
+}
+
+.feature-list li::before {
+  content: '→';
+  position: absolute;
+  left: 0;
+  color: #B79A6B;
+}
+
+/* Location Card specific */
+.location-card {
+  background-color: #24211E;
+  color: #FFFFFF;
+}
+
+.location-card .feature-title {
+  color: #FFFFFF;
+}
+
+.location-card .feature-icon-wrapper {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #FFFFFF;
+}
+
+.location-card .feature-list li {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.location-card .feature-list li::before {
+  content: '';
+}
+
+.location-card .feature-list li {
+  padding-left: 0;
+}

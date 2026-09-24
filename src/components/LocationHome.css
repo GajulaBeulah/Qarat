@@ -1,0 +1,272 @@
+.location-section {
+  background-color: #F7F4EF; /* Warm Ivory background */
+  padding: 100px 24px;
+  font-family: 'Manrope', sans-serif;
+  color: #292725;
+}
+
+.location-container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+/* 2-Column Desktop Layout */
+.location-layout {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+@media (min-width: 992px) {
+  .location-layout {
+    flex-direction: row;
+    gap: 100px;
+    align-items: stretch;
+  }
+}
+
+/* Left Column: Location Info */
+.location-info-col {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.location-eyebrow {
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  color: #8A7868; /* Warm Taupe */
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.location-eyebrow::before {
+  content: '';
+  height: 1px;
+  width: 30px;
+  background-color: #B79A6B; /* Muted Gold */
+}
+
+.location-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 1.25;
+  color: #24211E;
+  margin: 0 0 24px 0;
+}
+
+@media (min-width: 992px) {
+  .location-title {
+    font-size: 48px;
+  }
+}
+
+.location-desc {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #6F6962; /* Secondary Text */
+  margin: 0 0 40px 0;
+}
+
+.address-block {
+  margin-bottom: 30px;
+  padding-left: 20px;
+  border-left: 2px solid #E4DED5;
+  position: relative;
+}
+
+.address-block::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -2px;
+  height: 30px;
+  width: 2px;
+  background-color: #B79A6B;
+}
+
+.address-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 22px;
+  font-weight: 600;
+  color: #24211E;
+  margin: 0 0 10px 0;
+}
+
+.address-text {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: #6F6962;
+  margin: 0;
+}
+
+.contact-text {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #24211E;
+  margin: 10px 0 0 0;
+}
+
+/* Action Buttons */
+.location-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 40px;
+}
+
+.loc-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 12px 28px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.loc-btn-primary {
+  background-color: #24211E;
+  color: #FFFFFF;
+  border: 1px solid #24211E;
+}
+
+.loc-btn-primary:hover {
+  background-color: #38342f;
+  border-color: #38342f;
+  transform: translateY(-2px);
+}
+
+.loc-btn-secondary {
+  background-color: transparent;
+  color: #24211E;
+  border: 1px solid #E4DED5;
+}
+
+.loc-btn-secondary:hover {
+  border-color: #B79A6B;
+  background-color: rgba(183, 154, 107, 0.05);
+}
+
+/* Right Column: Map Placeholder Area */
+.location-map-col {
+  flex: 1.2;
+  position: relative;
+  display: flex;
+  align-items: stretch;
+}
+
+.map-wrapper {
+  position: relative;
+  width: 100%;
+  min-height: 400px;
+  background-color: #FFFFFF;
+  border: 1px solid #E4DED5;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.03);
+}
+
+/* Subtle architectural grid detail behind map */
+.map-bg-grid {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: 
+    linear-gradient(to right, rgba(228, 222, 213, 0.3) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(228, 222, 213, 0.3) 1px, transparent 1px);
+  background-size: 40px 40px;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.map-content {
+  position: relative;
+  z-index: 2;
+  background-color: #FFFFFF;
+  padding: 40px;
+  border: 1px solid #E4DED5;
+  max-width: 360px;
+  width: 100%;
+}
+
+.map-pin {
+  color: #B79A6B;
+  margin-bottom: 20px;
+}
+
+.map-business-name {
+  font-family: 'Playfair Display', serif;
+  font-size: 24px;
+  font-weight: 600;
+  color: #24211E;
+  margin: 0 0 10px 0;
+}
+
+.map-area {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #8A7868;
+  margin: 0 0 5px 0;
+}
+
+.map-market {
+  font-size: 0.95rem;
+  color: #6F6962;
+  margin: 0 0 30px 0;
+}
+
+.map-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px 24px;
+  background-color: #FFFFFF;
+  color: #B79A6B;
+  border: 1px solid #B79A6B;
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  width: 100%;
+}
+
+.map-btn:hover {
+  background-color: #B79A6B;
+  color: #FFFFFF;
+}
+
+/* Connecting decorative line */
+.map-connector-line {
+  display: none;
+}
+
+@media (min-width: 992px) {
+  .map-connector-line {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: -100px;
+    width: 100px;
+    height: 1px;
+    background-color: #B79A6B;
+    z-index: 3;
+    opacity: 0.5;
+  }
+}

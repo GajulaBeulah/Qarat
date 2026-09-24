@@ -1,0 +1,262 @@
+.footer-section {
+  background-color: #24211E; /* Deep Charcoal */
+  color: #FFFFFF;
+  padding: 80px 24px 0;
+  font-family: 'Manrope', sans-serif;
+  position: relative;
+}
+
+.footer-container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+/* Footer Top: Brand Area */
+.footer-top {
+  margin-bottom: 50px;
+}
+
+.footer-brand {
+  font-family: 'Playfair Display', serif;
+  font-size: 28px;
+  font-weight: 700;
+  color: #FFFFFF;
+  margin: 0 0 5px 0;
+  line-height: 1.1;
+  letter-spacing: 0.05em;
+}
+
+.footer-brand-subtitle {
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  color: #B79A6B;
+  text-transform: uppercase;
+  margin: 0 0 20px 0;
+}
+
+.footer-brand-desc {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: #D8D2CA; /* Secondary text */
+  max-width: 500px;
+  margin: 0 0 30px 0;
+}
+
+.footer-divider-top {
+  height: 1px;
+  width: 100%;
+  background-color: #B79A6B; /* Muted gold line */
+  opacity: 0.6;
+}
+
+/* Footer Middle: Links & Contact Columns */
+.footer-columns {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  margin-bottom: 60px;
+  padding-top: 50px;
+}
+
+@media (min-width: 768px) {
+  .footer-columns {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+.footer-col {
+  flex: 1;
+  min-width: 200px;
+}
+
+.footer-col-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: #FFFFFF;
+  margin: 0 0 25px 0;
+  letter-spacing: 0.05em;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.footer-links a {
+  color: #D8D2CA;
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: color 0.3s ease;
+  position: relative;
+  display: inline-block;
+}
+
+.footer-links a::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: #B79A6B;
+  transition: width 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #B79A6B;
+}
+
+.footer-links a:hover::after {
+  width: 100%;
+}
+
+/* Contact Details */
+.footer-contact-name {
+  font-weight: 600;
+  color: #FFFFFF;
+  margin: 0 0 10px 0;
+  font-size: 1rem;
+}
+
+.footer-address {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #D8D2CA;
+  margin: 0 0 20px 0;
+}
+
+.footer-phone {
+  display: block;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #FFFFFF;
+  text-decoration: none;
+  margin-bottom: 20px;
+  transition: color 0.3s ease;
+}
+
+.footer-phone:hover {
+  color: #B79A6B;
+}
+
+.footer-contact-actions {
+  display: flex;
+  gap: 15px;
+}
+
+.footer-action-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #B79A6B;
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-action-link:hover {
+  color: #FFFFFF;
+}
+
+/* Footer Bottom Area */
+.footer-bottom {
+  padding: 30px 0;
+  border-top: 1px solid rgba(216, 210, 202, 0.15); /* Thin divider */
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .footer-bottom {
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+  }
+}
+
+.footer-copyright,
+.footer-legal {
+  font-size: 0.9rem;
+  color: #6F6962; /* Very subtle text */
+  margin: 0;
+}
+
+.footer-legal span {
+  margin: 0 10px;
+}
+
+.back-to-top {
+  background: none;
+  border: none;
+  color: #D8D2CA;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  transition: color 0.3s ease;
+  font-family: 'Manrope', sans-serif;
+}
+
+.back-to-top:hover {
+  color: #B79A6B;
+}
+
+/* Mobile Fixed Action Bar */
+.mobile-action-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #24211E;
+  display: flex;
+  border-top: 1px solid rgba(183, 154, 107, 0.3);
+  z-index: 1000;
+}
+
+@media (min-width: 768px) {
+  .mobile-action-bar {
+    display: none;
+  }
+}
+
+.mobile-action-bar a {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 16px;
+  color: #FFFFFF;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.mobile-action-bar a:first-child {
+  border-right: 1px solid rgba(183, 154, 107, 0.3);
+}
+
+.mobile-action-bar a:hover {
+  background-color: rgba(183, 154, 107, 0.1);
+}
+
+/* Add padding to body for mobile so content isn't hidden behind the action bar */
+@media (max-width: 767px) {
+  .footer-section {
+    padding-bottom: 80px; /* Space for fixed bar */
+  }
+}

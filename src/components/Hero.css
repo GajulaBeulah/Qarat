@@ -1,0 +1,205 @@
+.hero-section-3d {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  background-image: url('/images/hero.jpg');
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  color: #FFFFFF;
+  padding-top: 150px;
+}
+
+.hero-section-3d::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(10, 15, 10, 0.4); /* Reduced tint so the background image is clearly visible */
+  z-index: 1;
+}
+
+.hero-content-center {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  max-width: 800px;
+  padding: 0 24px;
+  margin-bottom: 50px;
+}
+
+.hero-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 38px;
+  font-weight: 700;
+  color: #FFFFFF;
+  line-height: 1.15;
+  margin: 0 0 20px 0;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.7);
+}
+
+.hero-desc {
+  font-family: 'Manrope', sans-serif;
+  font-size: 0.95rem;
+  color: #FFFFFF; /* Changed from grey to white for better contrast with shadow */
+  line-height: 1.6;
+  margin: 0 auto 30px auto;
+  max-width: 650px;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.8);
+}
+
+@media (min-width: 768px) {
+  .hero-desc {
+    font-size: 1.05rem;
+  }
+}
+
+.hero-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  background: transparent;
+  color: #FFFFFF;
+  font-family: 'Manrope', sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 12px 24px;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  transition: all 0.3s ease;
+}
+
+.btn-icon {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: 2px solid #B79A6B;
+}
+
+.hero-btn:hover {
+  border-bottom-color: #B79A6B;
+  color: #B79A6B;
+}
+
+/* 3D Carousel Container */
+.hero-carousel-3d {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 1200px;
+  height: 400px;
+  margin: 0 auto;
+  perspective: 1500px; /* Creates the 3D space */
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+/* Base Card Style */
+.hero-card {
+  position: absolute;
+  width: 220px;
+  height: 320px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+  transition: all 0.5s ease;
+  transform-style: preserve-3d;
+  background-color: #111;
+  border: 1px solid rgba(255,255,255,0.1);
+}
+
+.hero-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+}
+
+.hero-card:hover img {
+  opacity: 1;
+}
+
+.card-overlay {
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  padding: 20px;
+  background: linear-gradient(to top, rgba(0,0,0,0.9), transparent);
+  text-align: center;
+}
+
+.card-overlay h3 {
+  font-family: 'Manrope', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #FFF;
+  margin: 0;
+}
+
+/* 3D Transformations for Cards */
+.card-center {
+  transform: translateZ(100px) scale(1.1);
+  z-index: 5;
+}
+
+.card-mid-left {
+  transform: translateX(-240px) translateZ(0px) rotateY(15deg);
+  z-index: 4;
+}
+
+.card-mid-right {
+  transform: translateX(240px) translateZ(0px) rotateY(-15deg);
+  z-index: 4;
+}
+
+.card-far-left {
+  transform: translateX(-460px) translateZ(-150px) rotateY(25deg);
+  z-index: 3;
+}
+
+.card-far-right {
+  transform: translateX(460px) translateZ(-150px) rotateY(-25deg);
+  z-index: 3;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .hero-card {
+    width: 180px;
+    height: 260px;
+  }
+  .card-mid-left { transform: translateX(-190px) rotateY(15deg); }
+  .card-mid-right { transform: translateX(190px) rotateY(-15deg); }
+  .card-far-left { transform: translateX(-360px) translateZ(-150px) rotateY(25deg); }
+  .card-far-right { transform: translateX(360px) translateZ(-150px) rotateY(-25deg); }
+}
+
+@media (max-width: 768px) {
+  /* On mobile, either scale down massively or fallback to horizontal scroll */
+  .hero-carousel-3d {
+    perspective: none;
+    height: auto;
+    display: flex;
+    justify-content: flex-start;
+    overflow-x: auto;
+    gap: 15px;
+    padding: 20px;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+  
+  .hero-carousel-3d::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .hero-card {
+    position: relative;
+    transform: none !important;
+    flex: 0 0 200px;
+    height: 280px;
+    z-index: 1 !important;
+  }
+}
