@@ -42,174 +42,119 @@
   margin: 0;
 }
 
-/* Cards Wrapper */
+/* Cards Wrapper & Layout */
 .ib-cards-wrapper {
-  display: grid;
-  gap: 30px;
-  margin-bottom: 40px;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: 24px;
+  padding-bottom: 40px;
+  padding-top: 10px;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
-/* Desktop Grid Layout */
+.ib-cards-wrapper::-webkit-scrollbar {
+  display: none;
+}
+
 @media (min-width: 992px) {
   .ib-container {
-    display: grid;
-    grid-template-columns: 1fr 1.2fr;
-    gap: 40px;
-  }
-  
-  .ib-left-col {
     display: flex;
-    flex-direction: column;
+    align-items: center;
+    gap: 60px;
   }
   
-  .ib-cards-wrapper {
-    display: contents; /* Flattens cards into the parent grid */
-  }
-  
-  /* Create the specific layout positions */
   .ib-text-block {
-    grid-column: 1 / 2;
-    grid-row: 1 / 2;
+    flex: 0 0 32%;
+    margin-bottom: 0;
   }
   
-  .ib-card:nth-child(1) {
-    grid-column: 1 / 2;
-    grid-row: 2 / 4;
-    height: 400px;
-  }
-  
-  .ib-card:nth-child(2) {
-    grid-column: 2 / 3;
-    grid-row: 1 / 3;
-    height: 250px;
-  }
-  
-  .ib-card:nth-child(3) {
-    grid-column: 2 / 3;
-    grid-row: 3 / 4;
-    height: 250px;
-  }
-  
-  .ib-button-wrapper {
-    grid-column: 2 / 3;
-    grid-row: 4 / 5;
-    align-self: end;
-  }
-}
-
-/* Mobile Horizontal Scrolling */
-@media (max-width: 991px) {
   .ib-cards-wrapper {
-    display: flex;
-    flex-wrap: nowrap;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    padding-bottom: 20px;
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-    gap: 20px;
-  }
-  
-  .ib-cards-wrapper::-webkit-scrollbar {
-    display: none;
-  }
-  
-  .ib-card {
-    flex: 0 0 280px;
-    height: 400px;
-    scroll-snap-align: start;
+    flex: 1;
   }
 }
 
-/* Base Card Styles */
+/* Base Card Styles - Arch Design */
 .ib-card {
-  position: relative;
-  display: block;
-  border-radius: 24px;
+  flex: 0 0 280px;
+  scroll-snap-align: start;
+  background-color: #FFFFFF;
+  border-radius: 120px 120px 30px 30px;
   overflow: hidden;
   text-decoration: none;
-  background-color: #1a1a1a;
-  transform: translateZ(0);
+  color: #24211E;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.04);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
 
-.ib-card-bg {
+.ib-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+}
+
+.ib-img-arch {
+  height: 250px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.ib-img-arch img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: transform 0.6s ease;
-  display: block;
+  transition: transform 0.8s ease;
 }
 
-.ib-card:hover .ib-card-bg {
-  transform: scale(1.05);
+.ib-card:hover .ib-img-arch img {
+  transform: scale(1.08);
 }
 
-.ib-card-overlay {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 50%;
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 100%);
+.ib-card-content {
+  padding: 24px 20px 35px;
+  text-align: center;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
-  align-items: center;
-  padding: 30px 20px;
-  text-align: center;
+  flex: 1;
 }
 
 .ib-card-title {
   font-family: 'Playfair Display', serif;
-  font-size: 1.5rem;
-  font-weight: 600;
-  color: #FFFFFF;
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: #24211E;
   margin: 0 0 10px 0;
 }
 
 .ib-card-desc {
-  font-size: 0.9rem;
-  color: rgba(255, 255, 255, 0.8);
+  font-size: 0.95rem;
+  color: #6F6962;
   margin: 0;
-  line-height: 1.5;
-  max-width: 90%;
-  opacity: 0;
-  transform: translateY(10px);
-  transition: opacity 0.3s ease, transform 0.3s ease;
+  line-height: 1.6;
 }
 
-.ib-card:hover .ib-card-desc {
-  opacity: 1;
-  transform: translateY(0);
+/* Simple Link Button */
+.ib-button-wrapper {
+  margin-top: 30px;
 }
 
-/* Button */
-.ib-btn-outline {
-  display: flex;
+.ib-link-text {
+  display: inline-flex;
   align-items: center;
-  justify-content: center;
-  gap: 12px;
-  width: 100%;
-  padding: 18px 30px;
-  border: 1px solid rgba(36, 33, 30, 0.2);
-  border-radius: 50px;
+  gap: 8px;
+  font-family: 'Manrope', sans-serif;
   font-size: 1rem;
   font-weight: 700;
   color: #24211E;
   text-decoration: none;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  transition: all 0.3s ease;
+  border-bottom: 2px solid #B79A6B;
+  padding-bottom: 4px;
+  transition: color 0.3s ease;
 }
 
-.ib-btn-outline:hover {
-  border-color: #24211E;
-  background-color: rgba(36, 33, 30, 0.03);
-}
-
-@media (min-width: 992px) {
-  .ib-btn-outline {
-    width: auto;
-    display: inline-flex;
-  }
+.ib-link-text:hover {
+  color: #B79A6B;
 }
