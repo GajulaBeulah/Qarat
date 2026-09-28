@@ -66,8 +66,8 @@
 
 /* Card Styling */
 .tb-card {
-  flex: 0 0 350px; /* Fixed width for cards in horizontal scroll */
-  scroll-snap-align: center;
+  flex: 0 0 350px;
+  scroll-snap-align: start;
   background-color: #FFFFFF;
   border-radius: 16px;
   padding: 32px;
