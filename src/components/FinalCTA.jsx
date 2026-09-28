@@ -35,7 +35,7 @@ const FinalCTA = () => {
             {/* Subtle architectural project crop */}
             <div className="cta-img-wrapper">
               <img 
-                src="/images/project1.jpg" 
+                src="/images/ceiling-hero-new.png" 
                 alt="Qarat Interior details" 
                 className="cta-img" 
               />

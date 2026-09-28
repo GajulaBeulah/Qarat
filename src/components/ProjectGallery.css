@@ -1,0 +1,95 @@
+/* ProjectGallery.css */
+.mySwiper {
+  width: 100%;
+  padding-top: 1rem !important;
+  padding-bottom: 5rem !important;
+}
+
+.gallery-slide {
+  width: 320px;
+  height: 400px;
+  overflow: hidden;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+  background-color: #fff;
+  transition: transform 0.3s ease;
+}
+
+/* Unique shapes matching the 1st image style */
+.shape-0 {
+  border-radius: 80px 20px 80px 20px;
+}
+.shape-1 {
+  border-radius: 100px 100px 20px 20px;
+}
+.shape-2 {
+  border-radius: 20px 80px 20px 80px;
+}
+.shape-3 {
+  border-radius: 20px 20px 100px 100px;
+}
+
+.gallery-slide:hover {
+  transform: translateY(-10px);
+}
+
+@media (max-width: 768px) {
+  .gallery-slide {
+    width: 260px;
+    height: 320px;
+  }
+}
+
+.slide-content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.slide-content img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.slide-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 1.5rem;
+  background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+  color: white;
+  transform: translateY(100%);
+  opacity: 0;
+  transition: all 0.4s ease;
+}
+
+.gallery-slide:hover .slide-overlay,
+.swiper-slide-active .slide-overlay {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.slide-overlay h4 {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: 600;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+}
+
+.swiper-pagination-bullet-active {
+  background: #B79A6B !important;
+}
+.swiper-button-next, .swiper-button-prev {
+  color: #B79A6B !important;
+  background: rgba(255, 255, 255, 0.9);
+  width: 3rem !important;
+  height: 3rem !important;
+  border-radius: 50%;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+.swiper-button-next:after, .swiper-button-prev:after {
+  font-size: 1.2rem !important;
+  font-weight: bold;
+}

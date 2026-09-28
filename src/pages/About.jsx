@@ -25,7 +25,7 @@ const About = () => {
           
           <div className="about-intro">
             <div className="about-image-wrapper">
-              <img src="/images/project2.jpg" alt="Qarat Interior Execution" className="about-main-img" />
+              <img src="/images/ceiling-hero-new.png" alt="Qarat Interior Execution" className="about-main-img" />
             </div>
             
             <div className="about-text-content">
@@ -44,7 +44,7 @@ const About = () => {
             {/* Interior Work */}
             <div className="feature-card">
               <div className="fc-img-wrapper">
-                <img src="/images/project1.jpg" alt="Interior Work" />
+                <img src="/images/new-upload-3.jpg" alt="Interior Work" />
               </div>
               <div className="fc-content">
                 <h3 className="feature-title">Interior Work</h3>
@@ -66,7 +66,7 @@ const About = () => {
             {/* Material Supply */}
             <div className="feature-card reverse">
               <div className="fc-img-wrapper">
-                <img src="/images/project3.jpg" alt="Material Supply" />
+                <img src="/images/new-upload-2.jpg" alt="Material Supply" />
               </div>
               <div className="fc-content">
                 <h3 className="feature-title">Material Supply</h3>
@@ -85,7 +85,7 @@ const About = () => {
             {/* Location & Contact */}
             <div className="feature-card location-card">
               <div className="fc-img-wrapper">
-                <img src="/images/project4.jpg" alt="Service Areas" />
+                <img src="/images/uv-marble-supply-new.jpg" alt="Service Areas" />
               </div>
               <div className="fc-content">
                 <h3 className="feature-title">Our Service Areas</h3>

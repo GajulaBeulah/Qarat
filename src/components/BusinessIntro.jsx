@@ -33,7 +33,7 @@ const BusinessIntro = () => {
           
           {/* Card 1 */}
           <div className="bi-card">
-            <img src="/images/project1.jpg" alt="Ceiling Solutions" className="bi-card-bg" />
+            <img src="/images/ceiling-4.png" alt="Ceiling Solutions" className="bi-card-bg" />
             <div className="bi-card-overlay">
               <div className="bi-card-icon">
                 <Hammer size={24} color="#B79A6B" />
@@ -44,7 +44,7 @@ const BusinessIntro = () => {
 
           {/* Card 2 */}
           <div className="bi-card">
-            <img src="/images/project2.jpg" alt="Material Supply" className="bi-card-bg" />
+            <img src="/images/new-upload-1.jpg" alt="Material Supply" className="bi-card-bg" />
             <div className="bi-card-overlay">
               <div className="bi-card-icon">
                 <Cuboid size={24} color="#B79A6B" />
@@ -55,7 +55,7 @@ const BusinessIntro = () => {
 
           {/* Card 3 */}
           <div className="bi-card">
-            <img src="/images/project3.jpg" alt="Modular Kitchen" className="bi-card-bg" />
+            <img src="/images/kitchen-4.png" alt="Modular Kitchen" className="bi-card-bg" />
             <div className="bi-card-overlay">
               <div className="bi-card-icon">
                 <Sofa size={24} color="#B79A6B" />
@@ -66,7 +66,7 @@ const BusinessIntro = () => {
 
           {/* Card 4 */}
           <div className="bi-card">
-            <img src="/images/project4.jpg" alt="Decorative Solutions" className="bi-card-bg" />
+            <img src="/images/uv-marble-supply-new.jpg" alt="Decorative Solutions" className="bi-card-bg" />
             <div className="bi-card-overlay">
               <div className="bi-card-icon">
                 <Sparkles size={24} color="#B79A6B" />

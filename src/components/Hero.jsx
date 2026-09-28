@@ -17,35 +17,35 @@ const Hero = () => {
 
       <div className="hero-carousel-3d">
         <div className="hero-card card-far-left">
-          <img src="/images/project1.jpg" alt="Luxury Bedroom" />
+          <img src="/images/ceiling-3.png" alt="Luxury Bedroom" />
           <div className="card-overlay">
             <h3>Luxury Bedroom</h3>
           </div>
         </div>
 
         <div className="hero-card card-mid-left">
-          <img src="/images/project2.jpg" alt="Modular Kitchen" />
+          <img src="/images/kitchen-4.png" alt="Modular Kitchen" />
           <div className="card-overlay">
             <h3>Modular Kitchen</h3>
           </div>
         </div>
 
         <div className="hero-card card-center">
-          <img src="/images/project4.jpg" alt="False Ceiling" />
+          <img src="/images/ceiling-5.png" alt="False Ceiling" />
           <div className="card-overlay">
             <h3>False Ceiling</h3>
           </div>
         </div>
 
         <div className="hero-card card-mid-right">
-          <img src="/images/project3.jpg" alt="Wall Paneling" />
+          <img src="/images/ceiling-hero-new.png" alt="Living Room Ceiling" />
           <div className="card-overlay">
-            <h3>Wall Paneling</h3>
+            <h3>Living Room Ceiling</h3>
           </div>
         </div>
 
         <div className="hero-card card-far-right">
-          <img src="/images/project1.jpg" alt="Interior Decor" />
+          <img src="/images/uv-marble-supply-new.jpg" alt="Interior Decor" />
           <div className="card-overlay">
             <h3>Interior Decor</h3>
           </div>

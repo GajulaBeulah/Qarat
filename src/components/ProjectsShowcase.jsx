@@ -9,31 +9,24 @@ const ProjectsShowcase = () => {
       <h2 className="ps-title">Projects Showcase</h2>
       
       <div className="ps-container">
-        {/* Top Large Card */}
         <Link to="/projects" className="ps-card ps-top">
-          <img src="/images/project4.jpg" alt="Luxury Residence" className="ps-img" />
-          <div className="ps-content">
-            <h3 className="ps-card-title">Luxury Residence Lucknow</h3>
-            <p className="ps-card-subtitle">Complete Interior Solutions</p>
-          </div>
+          <img src="/images/ceiling-hero-new.png" alt="Luxury Residence" className="ps-img" />
         </Link>
-
-        {/* Bottom Row */}
-        <div className="ps-bottom-row">
-          <Link to="/projects" className="ps-card ps-bottom-card">
-            <img src="/images/project1.jpg" alt="Modern Office" className="ps-img" />
-            <div className="ps-content">
-              <h3 className="ps-card-title">Modern Office Space</h3>
-            </div>
-          </Link>
-
-          <Link to="/projects" className="ps-card ps-bottom-card">
-            <img src="/images/project3.jpg" alt="Retail Showroom" className="ps-img" />
-            <div className="ps-content">
-              <h3 className="ps-card-title">Retail Showroom Design</h3>
-            </div>
-          </Link>
-        </div>
+        <Link to="/projects" className="ps-card ps-bottom-card">
+          <img src="/images/new-upload-3.jpg" alt="Modern Office" className="ps-img" />
+        </Link>
+        <Link to="/projects" className="ps-card ps-bottom-card">
+          <img src="/images/uv-marble-supply-new.jpg" alt="Retail Showroom" className="ps-img" />
+        </Link>
+        <Link to="/projects" className="ps-card ps-bottom-card">
+          <img src="/images/kitchen-4.png" alt="Modular Kitchen" className="ps-img" />
+        </Link>
+        <Link to="/projects" className="ps-card ps-bottom-card">
+          <img src="/images/ceiling-3.png" alt="Ceiling Work" className="ps-img" />
+        </Link>
+        <Link to="/projects" className="ps-card ps-bottom-card">
+          <img src="/images/new-upload-1.jpg" alt="Fluted Panel" className="ps-img" />
+        </Link>
       </div>
 
       <Link to="/projects" className="ps-btn">

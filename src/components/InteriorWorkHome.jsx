@@ -24,7 +24,7 @@ const InteriorWorkHome = () => {
         <div className="ib-cards-wrapper">
           <Link to="/interior-work/ceiling-work" className="ib-card">
             <div className="ib-img-arch">
-              <img src="/images/project2.jpg" alt="Ceiling Work" />
+              <img src="/images/ceiling-4.png" alt="Ceiling Work" />
             </div>
             <div className="ib-card-content">
               <h3 className="ib-card-title">Ceiling Work</h3>
@@ -34,7 +34,7 @@ const InteriorWorkHome = () => {
 
           <Link to="/interior-work/wall-decorative-work" className="ib-card">
             <div className="ib-img-arch">
-              <img src="/images/project3.jpg" alt="Wall & Decorative Work" />
+              <img src="/images/new-upload-2.jpg" alt="Wall & Decorative Work" />
             </div>
             <div className="ib-card-content">
               <h3 className="ib-card-title">Wall & Decorative Work</h3>
@@ -44,7 +44,7 @@ const InteriorWorkHome = () => {
 
           <Link to="/interior-work/modular-kitchen-furniture" className="ib-card">
             <div className="ib-img-arch">
-              <img src="/images/project4.jpg" alt="Modular Kitchen & Furniture" />
+              <img src="/images/kitchen-4.png" alt="Modular Kitchen & Furniture" />
             </div>
             <div className="ib-card-content">
               <h3 className="ib-card-title">Modular Kitchen & Furniture</h3>

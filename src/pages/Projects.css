@@ -162,14 +162,26 @@
   max-width: 1280px;
   margin: 0 auto 100px;
   padding: 0 24px;
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 30px;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding-bottom: 20px;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+
+.projects-gallery::-webkit-scrollbar {
+  display: none;
 }
 
 @media (min-width: 768px) {
   .projects-gallery {
+    display: grid;
     grid-template-columns: repeat(2, 1fr);
+    overflow-x: visible;
+    padding-bottom: 0;
   }
 }
 
@@ -186,12 +198,20 @@
 
 .gallery-item {
   position: relative;
+  flex: 0 0 280px;
+  scroll-snap-align: start;
   border-radius: 8px;
   overflow: hidden;
   background-color: #FFFFFF;
   box-shadow: 0 10px 30px rgba(0,0,0,0.03);
   display: flex;
   flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  .gallery-item {
+    flex: auto;
+  }
 }
 
 .gallery-img-wrapper {
@@ -249,7 +269,10 @@
 
 /* CTA Section */
 .project-cta {
-  background-color: #24211E;
+  background-image: linear-gradient(rgba(36, 33, 30, 0.85), rgba(36, 33, 30, 0.85)), url('/images/new-upload-3.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
   padding: 100px 24px;
   text-align: center;
 }

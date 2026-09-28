@@ -72,13 +72,13 @@ const TestimonialBlock = () => {
                 ))}
               </div>
               <p className="tb-text">"{review.text}"</p>
-              <div className="tb-author-box">
-                <div className="tb-author-avatar">
-                  {review.author.charAt(0)}
-                </div>
+              <div className="tb-author-box" style={{ justifyContent: 'space-between' }}>
                 <div>
                   <h4 className="tb-author-name">{review.author}</h4>
                   <p className="tb-author-loc">{review.location}</p>
+                </div>
+                <div className="tb-author-avatar">
+                  {review.author.charAt(0)}
                 </div>
               </div>
             </div>

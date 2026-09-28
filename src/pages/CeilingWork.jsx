@@ -1,8 +1,97 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import './InteriorPages.css';
+import { Star, ChevronDown, ChevronUp, ArrowRight, Quote , Trophy, Users , PlayCircle , CheckCircle , Clock, Award } from 'lucide-react';
+import './ServiceDetail.css';
+import ProjectGallery from '../components/ProjectGallery';
 
 const CeilingWork = () => {
+  // Service Data (from existing)
+  const services = [
+    {
+      id: "gypsum",
+      title: "Gypsum False Ceiling",
+      img: "/images/ceiling-4.png",
+      desc: "Seamless, smooth fire-resistant finish. Ideal for premium and modern living rooms and offices."
+    },
+    {
+      id: "pop",
+      title: "POP Murga Jali",
+      img: "/images/ceiling-5.png",
+      desc: "Highly durable and traditional ceiling design, perfect for intricate and curved custom shapes."
+    },
+    {
+      id: "pvc",
+      title: "PVC Panel Ceiling",
+      img: "/images/ceiling-1.png",
+      desc: "Moisture-resistant, cost-effective ceiling solution available in beautiful wood finishes. Perfect for damp areas."
+    }
+  ];
+
+  const reviews = [
+    {
+      name: "Rahul Verma",
+      location: "Lucknow",
+      text: "The interior execution was flawless. The design team listened to all our requirements and delivered a spectacular commercial office setup."
+    },
+    {
+      name: "Sneha Gupta",
+      location: "Kanpur",
+      text: "Amazing work! The team was highly professional, respected our space, and finished the project exactly on the promised timeline."
+    },
+    {
+      name: "Amit Singh",
+      location: "Delhi",
+      text: "Top quality materials and installation. The finishing is top notch. Very happy with the final result and highly recommend them."
+    },
+    {
+      name: "Priya Sharma",
+      location: "Noida",
+      text: "Beautiful execution and highly durable work. They completely transformed our living room into a luxurious space within a week."
+    },
+    {
+      name: "Vikram Reddy",
+      location: "Hyderabad",
+      text: "Superb craftsmanship and very transparent pricing. There were no hidden costs and the 3D designs matched the final outcome perfectly."
+    }
+  ];
+
+  const faqs = [
+    {
+      q: "Do you provide free estimates?",
+      a: "Yes, we provide free site visits and cost estimates for projects in Lucknow. Contact us via WhatsApp to schedule a visit."
+    },
+    {
+      q: "Do you only supply materials, or do you install them too?",
+      a: "We offer both! We are a leading material supplier for contractors, but we also have an in-house execution team for end-to-end installation."
+    },
+    {
+      q: "Which areas do you serve?",
+      a: "We primarily serve Lucknow and surrounding regions for installation, but we can supply materials in bulk across India."
+    },
+    {
+      q: "How long does a typical interior project take?",
+      a: "It depends on the scope. A single room ceiling or wall paneling can take 2-4 days, while a full home interior may take 3-6 weeks."
+    },
+    {
+      q: "Do you provide 3D designs before starting the work?",
+      a: "Yes, we offer complete 3D visualization and rendering services so you can see exactly how your space will look before execution begins."
+    },
+    {
+      q: "What types of materials do you use for modular kitchens?",
+      a: "We use only premium, branded materials. For modular kitchens we use Hettich/Blum hardware, and for ceilings we use genuine Gyproc or USG Boral boards."
+    },
+    {
+      q: "Is there a warranty on your interior work?",
+      a: "Yes! All our installations come with a standard 1-year service warranty, and the materials carry their respective manufacturer warranties (up to 10 years)."
+    },
+    {
+      q: "Can you work within a specific budget?",
+      a: "Absolutely. We offer a range of material finishes from cost-effective PVC panels to ultra-luxury UV marble sheets to accommodate various budgets."
+    }
+  ];
+
+  const [openFaq, setOpenFaq] = useState(null);
+
   const handleScroll = (id) => {
     const element = document.getElementById(id);
     if (element) {
@@ -11,71 +100,178 @@ const CeilingWork = () => {
   };
 
   return (
-    <div className="interior-work-page">
-      {/* Hero */}
-      <section className="page-hero">
-        <div className="page-hero-container">
-          <p className="page-eyebrow">Interior Work</p>
-          <h1 className="page-title">Ceiling Work Solutions</h1>
-          <p className="page-desc">
-            We provide professional false ceiling installations for homes, bedrooms, living rooms, offices, shops, and commercial spaces.
-          </p>
-        </div>
-      </section>
-
-      {/* Detail Layout */}
-      <section className="page-section bg-white">
-        <div className="page-container">
-          <div className="detail-layout">
-            
-            {/* Sidebar Nav */}
-            <aside className="detail-sidebar">
-              <h3 className="sidebar-title">Ceiling Services</h3>
-              <ul className="sidebar-nav">
-                <li><a href="#gypsum" onClick={(e) => { e.preventDefault(); handleScroll('gypsum'); }}>Gypsum False Ceiling</a></li>
-                <li><a href="#pop" onClick={(e) => { e.preventDefault(); handleScroll('pop'); }}>POP Murga Jali</a></li>
-                <li><a href="#pvc" onClick={(e) => { e.preventDefault(); handleScroll('pvc'); }}>PVC Panel Ceiling</a></li>
-              </ul>
-              
-              <div style={{ marginTop: '30px' }}>
-                <Link to="/get-quote" className="loc-btn loc-btn-primary" style={{ width: '100%', display: 'block', textAlign: 'center' }}>
-                  Get Quote
-                </Link>
-              </div>
-            </aside>
-
-            {/* Content Blocks */}
-            <div className="detail-content">
-              
-              <div id="gypsum" className="service-block">
-                <img src="/images/project4.jpg" alt="Gypsum False Ceiling" className="service-block-img" />
-                <h2 className="service-block-title">Gypsum False Ceiling</h2>
-                <p className="service-block-desc">
-                  Seamless, smooth finish ideal for living rooms and offices. Gypsum boards offer excellent fire resistance and sound insulation, providing a highly premium and modern look to your interiors.
-                </p>
-              </div>
-
-              <div id="pop" className="service-block">
-                <img src="/images/project2.jpg" alt="POP Murga Jali" className="service-block-img" />
-                <h2 className="service-block-title">POP Murga Jali</h2>
-                <p className="service-block-desc">
-                  Traditional, highly durable ceiling design. Plaster of Paris (POP) applied over a metal mesh (Murga Jali) provides immense strength and allows for complex, intricate, and curved ceiling designs that stand the test of time.
-                </p>
-              </div>
-
-              <div id="pvc" className="service-block">
-                <img src="/images/project1.jpg" alt="PVC Panel Ceiling" className="service-block-img" />
-                <h2 className="service-block-title">PVC Panel Ceiling</h2>
-                <p className="service-block-desc">
-                  Moisture-resistant and quick to install. Perfect for bathrooms, balconies, and areas prone to dampness. PVC panels come in various wood finishes and colors, offering a cost-effective yet beautiful ceiling solution.
-                </p>
-              </div>
-
+    <div className="service-page">
+                  {/* 2. Hero Section */}
+      <section className="sp-hero" style={{ backgroundImage: `url(/images/ceiling-hero-new.png)` }}>
+        <div className="sp-hero-overlay"></div>
+        <div className="sp-container sp-hero-container">
+          <div className="sp-hero-content">
+            <div className="sp-eyebrow-pill">
+              <span className="dot"></span>
+              <span className="sp-eyebrow">INTERIOR WORK</span>
             </div>
+            
+            <h1 className="sp-title">Best Ceiling Work in Lucknow</h1>
+            <p className="sp-desc">
+              We provide professional ceiling installation services for homes, bedrooms, living rooms, offices, shops, and commercial spaces.
+            </p>
 
+            <div className="sp-hero-buttons">
+              <Link to="/get-quote" className="sp-btn sp-btn-primary">Get Quote <ArrowRight size={18} /></Link>
+              <button onClick={() => handleScroll('services')} className="sp-btn sp-btn-play">
+                <span className="play-icon-wrap"><PlayCircle size={20} /></span>
+                Our Services
+              </button>
+            </div>
+            
+            <div className="sp-hero-glass-stats">
+              <div className="sp-stat-item">
+                <Trophy size={28} className="sp-stat-icon" />
+                <span className="sp-stat-value">5+</span>
+                <span className="sp-stat-label">Years Experience</span>
+              </div>
+              <div className="sp-stat-divider"></div>
+              <div className="sp-stat-item">
+                <Star size={28} className="sp-stat-icon" />
+                <span className="sp-stat-value">4.8</span>
+                <span className="sp-stat-label">Average Rating</span>
+              </div>
+              <div className="sp-stat-divider"></div>
+              <div className="sp-stat-item">
+                <Users size={28} className="sp-stat-icon" />
+                <span className="sp-stat-value">500+</span>
+                <span className="sp-stat-label">Happy Clients</span>
+              </div>
+            </div>
+            
           </div>
         </div>
       </section>
+
+{/* 3. What We Offer */}
+      <section id="services" className="sp-section sp-services-section">
+        <div className="sp-container">
+          <div className="sp-section-header">
+            <span className="sp-eyebrow-dark">Professional Ceiling Solutions</span>
+            <h2>What We Offer</h2>
+          </div>
+
+          <div className="sp-services-grid">
+            {services.map(service => (
+              <div key={service.id} className="sp-service-card">
+                <div className="sp-service-img-wrap">
+                  <img src={service.img} alt={service.title} className="sp-service-img" />
+                  <div className="sp-service-icon-badge">
+                    <CheckCircle size={28} />
+                  </div>
+                </div>
+                <div className="sp-service-content">
+                  <h3>{service.title}</h3>
+                  <p>{service.desc}</p>
+                  <div className="sp-service-actions">
+                    <Link to="/get-quote" className="sp-btn-text">Get Quote <ArrowRight size={18} /></Link>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+            {/* 4. About Section */}
+      <section className="sp-about-section">
+        <div className="sp-container sp-about-grid">
+          
+          <div className="sp-about-content">
+            <h2>Who We Are</h2>
+            <p>Qarat Interior Decorator provides professional ceiling and interior work services in Lucknow. We specialize in high-quality ceiling solutions and elegant interior finishes for residential and commercial spaces, focusing on quality workmanship, durable materials, and customer satisfaction.</p>
+            <div className="sp-about-features">
+              <div className="sp-feature-item">
+                <Award size={36} strokeWidth={1.5} />
+                <span>Quality Work</span>
+              </div>
+              <div className="sp-feature-item">
+                <Clock size={36} strokeWidth={1.5} />
+                <span>On-Time Delivery</span>
+              </div>
+              <div className="sp-feature-item">
+                <Users size={36} strokeWidth={1.5} />
+                <span>Experienced Team</span>
+              </div>
+            </div>
+          </div>
+          
+          <div className="sp-about-images">
+            <img src="/images/ceiling-3.png" alt="Interior Details" className="sp-main-img" />
+            <img src="/images/ceiling-4.png" alt="Interior Decor" className="sp-circle-img" />
+            <div className="sp-play-btn-box">
+              <PlayCircle size={40} fill="#24211E" color="#FFF" />
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      
+      <ProjectGallery />
+
+      {/* 5. Customer Reviews */}
+      <section className="sp-reviews-section">
+        <div className="sp-container">
+          <div className="sp-section-header">
+            <span className="sp-section-eyebrow">CLIENT REVIEWS</span>
+            <h2>What Our Clients Say</h2>
+            <p className="sp-section-subtitle">Real experiences from spaces we have transformed across the country.</p>
+          </div>
+          
+          <div className="sp-reviews-flex">
+            {reviews.map((review, idx) => (
+              <div key={idx} className="sp-review-card">
+                <div className="sp-stars">
+                  <Star size={14} color="#B79A6B" fill="#B79A6B" />
+                  <Star size={14} color="#B79A6B" fill="#B79A6B" />
+                  <Star size={14} color="#B79A6B" fill="#B79A6B" />
+                  <Star size={14} color="#B79A6B" fill="#B79A6B" />
+                  <Star size={14} color="#B79A6B" fill="#B79A6B" />
+                </div>
+                <p className="sp-review-text">"{review.text}"</p>
+                <div className="sp-review-footer">
+                  <div className="sp-review-avatar">{review.name.charAt(0)}</div>
+                  <div className="sp-review-author">
+                    <h4>{review.name}</h4>
+                    <p>{review.location}</p>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* 6. FAQ Section */}
+      <section className="sp-faq-section" id="faq">
+        <div className="sp-container">
+          <div className="sp-section-header">
+            <span className="sp-section-eyebrow">FAQ — INTERIOR SOLUTIONS</span>
+            <h2>Frequently Asked Questions</h2>
+          </div>
+          <div className="sp-faq-container">
+            {faqs.map((faq, idx) => (
+              <div key={idx} className={`sp-faq-item ${openFaq === idx ? 'active' : ''}`}>
+                <button className="sp-faq-question" onClick={() => setOpenFaq(openFaq === idx ? null : idx)}>
+                  {faq.q}
+                  <ChevronDown size={20} className="sp-faq-icon" />
+                </button>
+                <div className="sp-faq-answer">
+                  <p>{faq.a}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+
     </div>
   );
 };

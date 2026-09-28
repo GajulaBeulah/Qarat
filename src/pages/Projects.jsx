@@ -7,35 +7,51 @@ import './Projects.css';
 const projectData = [
   {
     id: 1,
-    image: '/images/project4.jpg',
+    image: '/images/ceiling-4.png',
+    category: 'Ceiling Work',
+    subcategories: ['All', 'Ceiling Work'],
+    title: 'Corporate Office Ceiling',
+    desc: 'Modern false ceiling with integrated linear lighting for a professional workspace.'
+  },
+  {
+    id: 2,
+    image: '/images/gypsum-gyproc.png',
+    category: 'Gypsum Boards',
+    subcategories: ['All', 'Gypsum Boards & Ceiling Materials'],
+    title: 'Premium Gypsum Installation',
+    desc: 'High-quality gypsum boards installed for superior acoustic and thermal insulation.'
+  },
+  {
+    id: 3,
+    image: '/images/new-upload-3.jpg',
+    category: 'Wall & Decorative Work',
+    subcategories: ['All', 'Wall & Decorative Work'],
+    title: 'Living Room Feature Wall',
+    desc: 'Custom fluted paneling integrated with a sleek entertainment unit.'
+  },
+  {
+    id: 4,
+    image: '/images/new-upload-1.jpg',
+    category: 'Panels',
+    subcategories: ['All', 'Panels'],
+    title: 'WPC Fluted Paneling',
+    desc: 'Durable and aesthetic wood-plastic composite panels for a natural wood finish.'
+  },
+  {
+    id: 5,
+    image: '/images/uv-marble-supply-new.jpg',
     category: 'Decorative Materials',
-    subcategories: ['All', 'Wall & Decorative Work', 'Decorative Materials', 'Modular Kitchen & Furniture'],
+    subcategories: ['All', 'Decorative Materials'],
     title: 'Luxury Bedroom Interior',
     desc: 'Featuring a high-gloss UV Marble Sheet backdrop and custom modular furniture.'
   },
   {
-    id: 2,
-    image: '/images/project3.jpg',
+    id: 6,
+    image: '/images/kitchen-4.png',
     category: 'Modular Kitchen & Furniture',
     subcategories: ['All', 'Modular Kitchen & Furniture'],
     title: 'Modern Modular Kitchen',
     desc: 'Seamless handle-less cabinets with premium finishes and smart storage solutions.'
-  },
-  {
-    id: 3,
-    image: '/images/project1.jpg',
-    category: 'Wall & Decorative Work',
-    subcategories: ['All', 'Wall & Decorative Work', 'Panels'],
-    title: 'Living Room Feature Wall',
-    desc: 'Custom WPC fluted paneling integrated with a sleek entertainment unit.'
-  },
-  {
-    id: 4,
-    image: '/images/project2.jpg',
-    category: 'Ceiling Work',
-    subcategories: ['All', 'Ceiling Work', 'Gypsum Boards & Ceiling Materials'],
-    title: 'Corporate Office Ceiling',
-    desc: 'Modern false ceiling with integrated linear lighting for a professional workspace.'
   }
 ];
 

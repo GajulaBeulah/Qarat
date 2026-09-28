@@ -1,7 +1,108 @@
-import React from 'react';
-import './InteriorPages.css';
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
+import { Star, ChevronDown, ChevronUp, ArrowRight, Quote , Trophy, Users , PlayCircle , CheckCircle , Clock, Award } from 'lucide-react';
+import './ServiceDetail.css';
+import ProjectGallery from '../components/ProjectGallery';
 
 const Gypsum = () => {
+  const services = [
+    {
+      id: "gypsum-tiles",
+      title: "Gypsum Tiles Ceiling Work",
+      img: "/images/gypsum-tiles.png",
+      desc: "High-quality 2x2 grid ceiling tiles offering quick access to overhead utilities and superior acoustic dampening."
+    },
+    {
+      id: "gypsum-partition",
+      title: "Gypsum Partition Wall Work",
+      img: "/images/gypsum-partition.png",
+      desc: "Fast and clean installation of drywall partitions using robust metal frameworks and premium gypsum boards."
+    },
+    {
+      id: "material-supply-usg",
+      title: "Material Supply (USG Knauf)",
+      img: "/images/gypsum-usg.jpg",
+      desc: "Wholesale supply of high-performance USG Knauf plasterboards for premium residential and commercial projects."
+    },
+    {
+      id: "material-supply-gyproc",
+      title: "Material Supply (Saint-Gobain Gyproc)",
+      img: "/images/gypsum-gyproc.png",
+      desc: "Complete range of Gyproc boards including standard, moisture-resistant, and fire-line materials."
+    },
+    {
+      id: "material-supply-india",
+      title: "India Gypsum Board Material Supply",
+      img: "/images/gypsum-india.jpg",
+      desc: "Cost-effective and durable India Gypsum boards for all standard false ceiling and partition applications."
+    }
+  ];
+
+  const reviews = [
+    {
+      name: "Rahul Verma",
+      location: "Lucknow",
+      text: "The interior execution was flawless. The design team listened to all our requirements and delivered a spectacular commercial office setup."
+    },
+    {
+      name: "Sneha Gupta",
+      location: "Kanpur",
+      text: "Amazing work! The team was highly professional, respected our space, and finished the project exactly on the promised timeline."
+    },
+    {
+      name: "Amit Singh",
+      location: "Delhi",
+      text: "Top quality materials and installation. The finishing is top notch. Very happy with the final result and highly recommend them."
+    },
+    {
+      name: "Priya Sharma",
+      location: "Noida",
+      text: "Beautiful execution and highly durable work. They completely transformed our living room into a luxurious space within a week."
+    },
+    {
+      name: "Vikram Reddy",
+      location: "Hyderabad",
+      text: "Superb craftsmanship and very transparent pricing. There were no hidden costs and the 3D designs matched the final outcome perfectly."
+    }
+  ];
+
+  const faqs = [
+    {
+      q: "Do you provide free estimates?",
+      a: "Yes, we provide free site visits and cost estimates for projects in Lucknow. Contact us via WhatsApp to schedule a visit."
+    },
+    {
+      q: "Do you only supply materials, or do you install them too?",
+      a: "We offer both! We are a leading material supplier for contractors, but we also have an in-house execution team for end-to-end installation."
+    },
+    {
+      q: "Which areas do you serve?",
+      a: "We primarily serve Lucknow and surrounding regions for installation, but we can supply materials in bulk across India."
+    },
+    {
+      q: "How long does a typical interior project take?",
+      a: "It depends on the scope. A single room ceiling or wall paneling can take 2-4 days, while a full home interior may take 3-6 weeks."
+    },
+    {
+      q: "Do you provide 3D designs before starting the work?",
+      a: "Yes, we offer complete 3D visualization and rendering services so you can see exactly how your space will look before execution begins."
+    },
+    {
+      q: "What types of materials do you use for modular kitchens?",
+      a: "We use only premium, branded materials. For modular kitchens we use Hettich/Blum hardware, and for ceilings we use genuine Gyproc or USG Boral boards."
+    },
+    {
+      q: "Is there a warranty on your interior work?",
+      a: "Yes! All our installations come with a standard 1-year service warranty, and the materials carry their respective manufacturer warranties (up to 10 years)."
+    },
+    {
+      q: "Can you work within a specific budget?",
+      a: "Absolutely. We offer a range of material finishes from cost-effective PVC panels to ultra-luxury UV marble sheets to accommodate various budgets."
+    }
+  ];
+
+  const [openFaq, setOpenFaq] = useState(null);
+
   const handleScroll = (id) => {
     const element = document.getElementById(id);
     if (element) {
@@ -10,74 +111,178 @@ const Gypsum = () => {
   };
 
   return (
-    <div className="interior-work-page">
-      {/* Hero */}
-      <section className="page-hero">
-        <div className="page-hero-container">
-          <p className="page-eyebrow">Material Supply</p>
-          <h1 className="page-title">Gypsum Boards & Ceiling Materials</h1>
-          <p className="page-desc">
-            We are a leading supplier of premium gypsum boards, ceiling channels, and accessories from top brands like Gyproc and USG Boral.
-          </p>
-        </div>
-      </section>
-
-      {/* Detail Layout */}
-      <section className="page-section bg-white">
-        <div className="page-container">
-          <div className="detail-layout">
-            
-            {/* Sidebar Nav */}
-            <aside className="detail-sidebar">
-              <h3 className="sidebar-title">Gypsum Materials</h3>
-              <ul className="sidebar-nav">
-                <li><a href="#india-gypsum" onClick={(e) => { e.preventDefault(); handleScroll('india-gypsum'); }}>India Gypsum Board</a></li>
-                <li><a href="#gyproc" onClick={(e) => { e.preventDefault(); handleScroll('gyproc'); }}>Gyproc Board & Materials</a></li>
-                <li><a href="#usg-boral" onClick={(e) => { e.preventDefault(); handleScroll('usg-boral'); }}>USG Boral Board & Materials</a></li>
-                <li><a href="#gypsum-tiles" onClick={(e) => { e.preventDefault(); handleScroll('gypsum-tiles'); }}>Gypsum Tiles</a></li>
-              </ul>
-            </aside>
-
-            {/* Content Blocks */}
-            <div className="detail-content">
-              
-              <div id="india-gypsum" className="service-block">
-                <img src="/images/project2.jpg" alt="India Gypsum Board" className="service-block-img" />
-                <h2 className="service-block-title">India Gypsum Board</h2>
-                <p className="service-block-desc">
-                  We supply genuine India Gypsum boards known for their reliability and cost-effectiveness. Perfect for standard false ceiling applications and drywall partitions in residential and commercial projects. Available in standard thicknesses and sizes with ready stock for bulk contractor orders.
-                </p>
-              </div>
-
-              <div id="gyproc" className="service-block">
-                <img src="/images/project1.jpg" alt="Gyproc Board & Materials" className="service-block-img" />
-                <h2 className="service-block-title">Gyproc Board & Materials (Saint-Gobain)</h2>
-                <p className="service-block-desc">
-                  As a premium offering, we supply the full range of Gyproc boards including standard, moisture-resistant (MR), and fire-line boards. We also stock complete Gyproc metal framing systems (channels, angles, perimeter channels) to ensure your ceiling structure meets the highest safety and quality standards.
-                </p>
-              </div>
-
-              <div id="usg-boral" className="service-block">
-                <img src="/images/project4.jpg" alt="USG Boral Board" className="service-block-img" />
-                <h2 className="service-block-title">USG Boral Board & Materials</h2>
-                <p className="service-block-desc">
-                  For projects specifying USG Boral, we supply their high-performance plasterboards and ceiling systems. Known for their anti-sag properties and superior acoustic performance, these boards are ideal for premium office spaces, auditoriums, and high-end residential interiors.
-                </p>
-              </div>
-
-              <div id="gypsum-tiles" className="service-block">
-                <img src="/images/project3.jpg" alt="Gypsum Tiles" className="service-block-img" />
-                <h2 className="service-block-title">Gypsum Tiles</h2>
-                <p className="service-block-desc">
-                  We supply 2x2 grid ceiling gypsum tiles in various patterns (fully perforated, semi-perforated, vinyl-faced). These are highly sought after for office buildings, hospitals, and retail environments where quick access to overhead utilities and superior acoustic dampening are required.
-                </p>
-              </div>
-
+    <div className="service-page">
+                  {/* 2. Hero Section */}
+      <section className="sp-hero" style={{ backgroundImage: `url(/images/ceiling-3.png)` }}>
+        <div className="sp-hero-overlay"></div>
+        <div className="sp-container sp-hero-container">
+          <div className="sp-hero-content">
+            <div className="sp-eyebrow-pill">
+              <span className="dot"></span>
+              <span className="sp-eyebrow">MATERIAL SUPPLY</span>
             </div>
+            
+            <h1 className="sp-title">Best Gypsum Boards & Ceiling Materials in lucknow</h1>
+            <p className="sp-desc">
+              We are a leading supplier of premium gypsum boards, ceiling channels, and accessories from top brands like Gyproc and USG Boral.
+            </p>
 
+            <div className="sp-hero-buttons">
+              <Link to="/get-quote" className="sp-btn sp-btn-primary">Get Quote <ArrowRight size={18} /></Link>
+              <button onClick={() => handleScroll('services')} className="sp-btn sp-btn-play">
+                <span className="play-icon-wrap"><PlayCircle size={20} /></span>
+                Our Materials
+              </button>
+            </div>
+            
+            <div className="sp-hero-glass-stats">
+              <div className="sp-stat-item">
+                <Trophy size={28} className="sp-stat-icon" />
+                <span className="sp-stat-value">5+</span>
+                <span className="sp-stat-label">Years Experience</span>
+              </div>
+              <div className="sp-stat-divider"></div>
+              <div className="sp-stat-item">
+                <Star size={28} className="sp-stat-icon" />
+                <span className="sp-stat-value">4.8</span>
+                <span className="sp-stat-label">Average Rating</span>
+              </div>
+              <div className="sp-stat-divider"></div>
+              <div className="sp-stat-item">
+                <Users size={28} className="sp-stat-icon" />
+                <span className="sp-stat-value">500+</span>
+                <span className="sp-stat-label">Happy Clients</span>
+              </div>
+            </div>
+            
           </div>
         </div>
       </section>
+
+{/* 3. What We Offer */}
+      <section id="services" className="sp-section sp-services-section">
+        <div className="sp-container">
+          <div className="sp-section-header">
+            <span className="sp-eyebrow-dark">Premium Supply</span>
+            <h2>Gypsum Materials</h2>
+          </div>
+
+          <div className="sp-services-grid">
+            {services.map(service => (
+              <div key={service.id} className="sp-service-card">
+                <div className="sp-service-img-wrap">
+                  <img src={service.img} alt={service.title} className="sp-service-img" />
+                  <div className="sp-service-icon-badge">
+                    <CheckCircle size={28} />
+                  </div>
+                </div>
+                <div className="sp-service-content">
+                  <h3>{service.title}</h3>
+                  <p>{service.desc}</p>
+                  <div className="sp-service-actions">
+                    <Link to="/get-quote" className="sp-btn-text">Get Quote <ArrowRight size={18} /></Link>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+            {/* 4. About Section */}
+      <section className="sp-about-section">
+        <div className="sp-container sp-about-grid">
+          
+          <div className="sp-about-content">
+            <h2>Who We Are</h2>
+            <p>Qarat is a trusted material supplier in Lucknow, specializing in high-quality gypsum boards, metal framing systems, and interior materials. We cater to interior contractors, builders, and direct clients with wholesale pricing, ready stock, and fast delivery to ensure your projects run smoothly.</p>
+            <div className="sp-about-features">
+              <div className="sp-feature-item">
+                <Award size={36} strokeWidth={1.5} />
+                <span>Genuine Brands</span>
+              </div>
+              <div className="sp-feature-item">
+                <Clock size={36} strokeWidth={1.5} />
+                <span>Wholesale Pricing</span>
+              </div>
+              <div className="sp-feature-item">
+                <Users size={36} strokeWidth={1.5} />
+                <span>On-Time Delivery</span>
+              </div>
+            </div>
+          </div>
+          
+          <div className="sp-about-images">
+            <img src="/images/gypsum-gyproc.png" alt="Interior Details" className="sp-main-img" />
+            <img src="/images/ceiling-4.png" alt="Interior Decor" className="sp-circle-img" />
+            <div className="sp-play-btn-box">
+              <PlayCircle size={40} fill="#24211E" color="#FFF" />
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      
+      <ProjectGallery />
+
+      {/* 5. Customer Reviews */}
+      <section className="sp-reviews-section">
+        <div className="sp-container">
+          <div className="sp-section-header">
+            <span className="sp-section-eyebrow">CLIENT REVIEWS</span>
+            <h2>What Our Clients Say</h2>
+            <p className="sp-section-subtitle">Real experiences from spaces we have transformed across the country.</p>
+          </div>
+          
+          <div className="sp-reviews-flex">
+            {reviews.map((review, idx) => (
+              <div key={idx} className="sp-review-card">
+                <div className="sp-stars">
+                  <Star size={14} color="#B79A6B" fill="#B79A6B" />
+                  <Star size={14} color="#B79A6B" fill="#B79A6B" />
+                  <Star size={14} color="#B79A6B" fill="#B79A6B" />
+                  <Star size={14} color="#B79A6B" fill="#B79A6B" />
+                  <Star size={14} color="#B79A6B" fill="#B79A6B" />
+                </div>
+                <p className="sp-review-text">"{review.text}"</p>
+                <div className="sp-review-footer">
+                  <div className="sp-review-avatar">{review.name.charAt(0)}</div>
+                  <div className="sp-review-author">
+                    <h4>{review.name}</h4>
+                    <p>{review.location}</p>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* 6. FAQ Section */}
+      <section className="sp-faq-section" id="faq">
+        <div className="sp-container">
+          <div className="sp-section-header">
+            <span className="sp-section-eyebrow">FAQ — INTERIOR SOLUTIONS</span>
+            <h2>Frequently Asked Questions</h2>
+          </div>
+          <div className="sp-faq-container">
+            {faqs.map((faq, idx) => (
+              <div key={idx} className={`sp-faq-item ${openFaq === idx ? 'active' : ''}`}>
+                <button className="sp-faq-question" onClick={() => setOpenFaq(openFaq === idx ? null : idx)}>
+                  {faq.q}
+                  <ChevronDown size={20} className="sp-faq-icon" />
+                </button>
+                <div className="sp-faq-answer">
+                  <p>{faq.a}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+
     </div>
   );
 };

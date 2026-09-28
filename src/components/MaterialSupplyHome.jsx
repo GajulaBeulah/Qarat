@@ -32,7 +32,7 @@ const MaterialSupplyHome = () => {
           
           {/* Card 1 */}
           <Link to="/material-supply/gypsum-boards-ceiling-materials" className="mhs-card">
-            <img src="/images/project1.jpg" alt="Gypsum Boards & Ceiling" className="mhs-card-bg" />
+            <img src="/images/ceiling-5.png" alt="Gypsum Boards & Ceiling" className="mhs-card-bg" />
             <div className="mhs-card-content">
               <div className="mhs-card-icon-wrapper">
                 <Boxes size={24} className="mhs-card-icon" />
@@ -46,7 +46,7 @@ const MaterialSupplyHome = () => {
 
           {/* Card 2 */}
           <Link to="/material-supply/panels" className="mhs-card">
-            <img src="/images/project3.jpg" alt="Panels" className="mhs-card-bg" />
+            <img src="/images/new-upload-1.jpg" alt="Panels" className="mhs-card-bg" />
             <div className="mhs-card-content">
               <div className="mhs-card-icon-wrapper">
                 <Layers size={24} className="mhs-card-icon" />
@@ -60,7 +60,7 @@ const MaterialSupplyHome = () => {
 
           {/* Card 3 */}
           <Link to="/material-supply/decorative-materials" className="mhs-card">
-            <img src="/images/project4.jpg" alt="Decorative Materials" className="mhs-card-bg" />
+            <img src="/images/uv-marble-supply-new.jpg" alt="Decorative Materials" className="mhs-card-bg" />
             <div className="mhs-card-content">
               <div className="mhs-card-icon-wrapper">
                 <Palette size={24} className="mhs-card-icon" />

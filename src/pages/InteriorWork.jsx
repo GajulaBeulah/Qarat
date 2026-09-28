@@ -24,7 +24,7 @@ const InteriorWork = () => {
             
             <Link to="/interior-work/ceiling-work" className="cat-card">
               <div className="cat-img-wrapper">
-                <img src="/images/project2.jpg" alt="Ceiling Work" className="cat-img" />
+                <img src="/images/ceiling-4.png" alt="Ceiling Work" className="cat-img" />
               </div>
               <div className="cat-content">
                 <h3 className="cat-title">Ceiling Work</h3>
@@ -40,7 +40,7 @@ const InteriorWork = () => {
 
             <Link to="/interior-work/wall-decorative-work" className="cat-card">
               <div className="cat-img-wrapper">
-                <img src="/images/project1.jpg" alt="Wall Work" className="cat-img" />
+                <img src="/images/new-upload-3.jpg" alt="Wall Work" className="cat-img" />
               </div>
               <div className="cat-content">
                 <h3 className="cat-title">Wall & Decorative Work</h3>
@@ -56,7 +56,7 @@ const InteriorWork = () => {
 
             <Link to="/interior-work/modular-kitchen-furniture" className="cat-card">
               <div className="cat-img-wrapper">
-                <img src="/images/project3.jpg" alt="Modular Work" className="cat-img" />
+                <img src="/images/new-upload-2.jpg" alt="Modular Work" className="cat-img" />
               </div>
               <div className="cat-content">
                 <h3 className="cat-title">Modular Kitchen & Furniture</h3>
