@@ -56,14 +56,22 @@ const Footer = () => {
               </ul>
             </div>
 
-            <div className="footer-col">
+            <div className="footer-col" itemScope itemType="https://schema.org/LocalBusiness">
               <h3 className="footer-col-title">Contact Us</h3>
-              <p className="footer-contact-name">Qarat Interior Decorator</p>
-              <p className="footer-address">
-                Ali Nawab Market, Hardoi Road, Dubagga,<br />
-                Lucknow, Uttar Pradesh – 226003
+              <p className="footer-contact-name" itemProp="name">Qarat Interior Decorator</p>
+              <p className="footer-address" itemProp="address" itemScope itemType="https://schema.org/PostalAddress">
+                <span itemProp="streetAddress">Ali Nawab Market, Hardoi Road, Dubagga</span>,<br />
+                <span itemProp="addressLocality">Lucknow</span>, <span itemProp="addressRegion">Uttar Pradesh</span> – <span itemProp="postalCode">226003</span>
               </p>
-              <a href="tel:09336411421" className="footer-phone">09336411421</a>
+              <a href="tel:09336411421" className="footer-phone" itemProp="telephone">09336411421</a>
+              
+              <div style={{ display: 'none' }}>
+                <a href="https://www.facebook.com/qarat" itemProp="sameAs">Facebook</a>
+                <a href="https://twitter.com/qarat" itemProp="sameAs">X</a>
+                <a href="https://www.instagram.com/qarat" itemProp="sameAs">Instagram</a>
+                <a href="https://www.linkedin.com/company/qarat" itemProp="sameAs">LinkedIn</a>
+                <a href="https://www.youtube.com/qarat" itemProp="sameAs">YouTube</a>
+              </div>
             </div>
 
           </div>
