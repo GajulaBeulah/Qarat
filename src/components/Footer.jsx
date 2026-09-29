@@ -29,7 +29,7 @@ const Footer = () => {
             </div>
             
             <div className="footer-col">
-              <h4 className="footer-col-title">Quick Links</h4>
+              <h3 className="footer-col-title">Quick Links</h3>
               <ul className="footer-links">
                 <li><Link to="/">Home</Link></li>
                 <li><Link to="/projects">Projects</Link></li>
@@ -39,7 +39,7 @@ const Footer = () => {
             </div>
 
             <div className="footer-col">
-              <h4 className="footer-col-title">Interior Work</h4>
+              <h3 className="footer-col-title">Interior Work</h3>
               <ul className="footer-links">
                 <li><Link to="/interior-work/ceiling-work">Ceiling Work</Link></li>
                 <li><Link to="/interior-work/wall-decorative-work">Wall & Decorative</Link></li>
@@ -48,7 +48,7 @@ const Footer = () => {
             </div>
 
             <div className="footer-col">
-              <h4 className="footer-col-title">Material Supply</h4>
+              <h3 className="footer-col-title">Material Supply</h3>
               <ul className="footer-links">
                 <li><Link to="/material-supply/gypsum-boards-ceiling-materials">Gypsum & Ceilings</Link></li>
                 <li><Link to="/material-supply/panels">Panels</Link></li>
@@ -57,7 +57,7 @@ const Footer = () => {
             </div>
 
             <div className="footer-col">
-              <h4 className="footer-col-title">Contact Us</h4>
+              <h3 className="footer-col-title">Contact Us</h3>
               <p className="footer-contact-name">Qarat Interior Decorator</p>
               <p className="footer-address">
                 Ali Nawab Market, Hardoi Road, Dubagga,<br />

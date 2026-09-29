@@ -65,7 +65,7 @@ const FAQHome = () => {
                 onClick={() => toggleFAQ(index)}
               >
                 <div className="faq-item-header">
-                  <h4 className="faq-question-text">{faq.question}</h4>
+                  <h3 className="faq-question-text">{faq.question}</h3>
                   <div className="faq-chevron">
                     <ChevronDown size={20} strokeWidth={2.5} />
                   </div>

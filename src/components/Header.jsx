@@ -37,7 +37,7 @@ const Header = () => {
       <header className={headerClass}>
         <div className="header-content">
           <Link to="/" className="header-logo" onClick={closeMobileMenu}>
-            <h1>QARAT</h1>
+            <span className="logo-title">QARAT</span>
             <span className="subtitle">Interior Decorator</span>
           </Link>
 

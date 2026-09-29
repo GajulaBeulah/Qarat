@@ -77,7 +77,7 @@ const TestimonialBlock = () => {
                   {review.author.charAt(0)}
                 </div>
                 <div>
-                  <h4 className="tb-author-name">{review.author}</h4>
+                  <h3 className="tb-author-name">{review.author}</h3>
                   <p className="tb-author-loc">{review.location}</p>
                 </div>
               </div>

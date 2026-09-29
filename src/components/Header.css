@@ -34,7 +34,7 @@
   color: #FFFFFF;
 }
 
-.header-logo h1 {
+.header-logo .logo-title {
   margin: 0;
   font-size: 1.4rem;
   font-weight: 700;
@@ -311,7 +311,7 @@
 
 
 /* Scrolled State Text Colors */
-.header-container.scrolled .header-logo h1,
+.header-container.scrolled .header-logo .logo-title,
 .header-container.scrolled .header-logo .subtitle,
 .header-container.scrolled .nav-link,
 .header-container.scrolled .dropdown-toggle,
