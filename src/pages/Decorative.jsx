@@ -9,13 +9,13 @@ const Decorative = () => {
     {
       id: "uv-marble",
       title: "UV Marble Sheet Supply",
-      img: "/images/uv-marble-supply-new.jpg",
+      img: "/images/marble-wall-1.jpg",
       desc: "8ft x 4ft sheets mimicking natural Italian marble. Popular for quick, luxurious, and cost-effective renovations."
     },
     {
       id: "wallpaper",
       title: "Wallpaper Rolls",
-      img: "/images/wallpaper-floral.jpg",
+      img: "/images/wallpaper-geometric.png",
       desc: "Imported and domestic premium wallpaper rolls including heavy-duty vinyl, 3D textures, and metallic accents."
     }
   ];
@@ -195,7 +195,7 @@ const Decorative = () => {
           </div>
           
           <div className="sp-about-images">
-            <img src="/images/uv-marble-supply-new.jpg" alt="Interior Details" className="sp-main-img" />
+            <img src="/images/marble-wall-2.png" alt="Interior Details" className="sp-main-img" />
             <img src="/images/marble-wall-1.jpg" alt="Interior Decor" className="sp-circle-img" />
             <div className="sp-play-btn-box">
               <PlayCircle size={40} fill="#24211E" color="#FFF" />
