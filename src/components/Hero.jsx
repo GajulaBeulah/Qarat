@@ -17,9 +17,9 @@ const Hero = () => {
 
       <div className="hero-carousel-3d">
         <div className="hero-card card-far-left">
-          <img src="/images/ceiling-3.png" alt="Luxury Bedroom" />
+          <img src="/images/kitchen-hero-new.png" alt="Premium Kitchen" />
           <div className="card-overlay">
-            <h3>Luxury Bedroom</h3>
+            <h3>Premium Kitchen</h3>
           </div>
         </div>
 
