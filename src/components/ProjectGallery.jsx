@@ -24,18 +24,18 @@ const ProjectGallery = ({ category = "all" }) => {
     { src: "/images/kitchen-4.png", alt: "Modular Kitchen", tags: ["kitchen"] },
     { src: "/images/kitchen-new-grey.jpg", alt: "Grey Modular Kitchen", tags: ["kitchen"] },
     
-    { src: "/images/pvc-wall.png", alt: "PVC Wall Panel", tags: ["wall", "panels", "decorative"] },
-    { src: "/images/pvc-1.png", alt: "Fluted PVC Panel", tags: ["wall", "panels", "decorative"] },
-    { src: "/images/pvc-2.jpg", alt: "Wood finish PVC", tags: ["wall", "panels", "decorative"] },
+    { src: "/images/pvc-wall.png", alt: "PVC Wall Panel", tags: ["wall", "panels"] },
+    { src: "/images/pvc-1.png", alt: "Fluted PVC Panel", tags: ["wall", "panels"] },
+    { src: "/images/pvc-2.jpg", alt: "Wood finish PVC", tags: ["wall", "panels"] },
     { src: "/images/tv-unit.jpg", alt: "Fluted Panel TV Unit", tags: ["wall", "panels", "decorative"] },
-    { src: "/images/marble-wall-1.jpg", alt: "UV Marble Wall Design", tags: ["wall", "panels", "decorative"] },
-    { src: "/images/marble-wall-2.png", alt: "UV Marble Sheet TV Unit", tags: ["wall", "panels", "decorative"] },
-    { src: "/images/marble-wall-3.jpg", alt: "Wavy UV Marble Pattern", tags: ["wall", "panels", "decorative"] },
-    { src: "/images/uv-marble-supply-new.jpg", alt: "Marble Supply", tags: ["wall", "panels", "decorative"] },
-    { src: "/images/new-upload-1.jpg", alt: "Decorative Wall 1", tags: ["wall", "panels", "decorative"] },
-    { src: "/images/new-upload-2.jpg", alt: "Decorative Wall 2", tags: ["wall", "panels", "decorative"] },
-    { src: "/images/new-upload-3.jpg", alt: "Decorative Space", tags: ["wall", "panels", "decorative"] },
-    { src: "/images/new-upload-4.jpg", alt: "Decorative Space 2", tags: ["wall", "panels", "decorative"] }
+    { src: "/images/marble-wall-1.jpg", alt: "UV Marble Wall Design", tags: ["wall", "decorative"] },
+    { src: "/images/marble-wall-2.png", alt: "UV Marble Sheet TV Unit", tags: ["wall", "decorative"] },
+    { src: "/images/marble-wall-3.jpg", alt: "Wavy UV Marble Pattern", tags: ["wall", "decorative"] },
+    { src: "/images/uv-marble-supply-new.jpg", alt: "Marble Supply", tags: ["decorative"] },
+    { src: "/images/new-upload-1.jpg", alt: "Decorative Wall 1", tags: ["wall", "panels"] },
+    { src: "/images/new-upload-2.jpg", alt: "Decorative Wall 2", tags: ["wall", "decorative"] },
+    { src: "/images/new-upload-3.jpg", alt: "Decorative Space", tags: ["wall", "decorative"] },
+    { src: "/images/new-upload-4.jpg", alt: "Decorative Space 2", tags: ["wall", "decorative"] }
   ];
 
   const images = category === "all" ? allImages : allImages.filter(img => img.tags.includes(category));
