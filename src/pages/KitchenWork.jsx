@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { Star, ChevronDown, ChevronUp, ArrowRight, Quote , Trophy, Users , PlayCircle , CheckCircle , Clock, Award } from 'lucide-react';
 import './ServiceDetail.css';
 import ProjectGallery from '../components/ProjectGallery';
+import FinalCTA from '../components/FinalCTA';
 
 const KitchenWork = () => {
   const services = [
@@ -264,6 +265,7 @@ const KitchenWork = () => {
         </div>
       </section>
 
+      <FinalCTA />
 
     </div>
   );

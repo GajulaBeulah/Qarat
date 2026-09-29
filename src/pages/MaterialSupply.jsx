@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight } from 'lucide-react';
 import './InteriorPages.css';
+import FinalCTA from '../components/FinalCTA';
 
 const MaterialSupply = () => {
   return (
@@ -73,6 +74,7 @@ const MaterialSupply = () => {
           </div>
         </div>
       </section>
+      <FinalCTA />
     </div>
   );
 };
