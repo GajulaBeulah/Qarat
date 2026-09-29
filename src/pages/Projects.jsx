@@ -73,10 +73,7 @@ const Projects = () => {
     project.subcategories.includes(activeFilter)
   );
 
-  // If we are on 'All', use project4 as featured, and the rest for gallery
-  // If a specific filter is active, we might use the first match as featured, or just show all in gallery.
-  const featuredProject = filteredProjects.length > 0 ? filteredProjects[0] : null;
-  const galleryProjects = filteredProjects.length > 1 ? filteredProjects.slice(1) : [];
+  // We no longer split into featured and gallery, we just use filteredProjects directly.
 
   return (
     <div className="projects-page">
@@ -114,35 +111,18 @@ const Projects = () => {
         ))}
       </section>
 
-      {/* SECTION 4 — FEATURED PROJECT */}
-      {featuredProject && (
-        <section className="featured-project">
-          <div className="featured-project-inner">
-            <img src={featuredProject.image} alt={featuredProject.title} className="featured-project-img" />
-            <div className="featured-project-content">
-              <span className="featured-category">{featuredProject.category}</span>
-              <h3 className="featured-title">{featuredProject.title}</h3>
-              <p className="featured-desc">{featuredProject.desc}</p>
-              <Link to="/get-quote" className="loc-btn loc-btn-primary" style={{ width: 'fit-content' }}>
-                Discuss Similar Project
-              </Link>
-            </div>
-          </div>
-        </section>
-      )}
-
-      {/* SECTION 11 — PROJECT GALLERY (Handles Sections 5-10 Dynamically based on filter) */}
-      {galleryProjects.length > 0 && (
-        <section className="projects-gallery">
-          {galleryProjects.map(project => (
-            <div key={project.id} className="gallery-item">
-              <div className="gallery-img-wrapper">
-                <img src={project.image} alt={project.title} className="gallery-img" />
+      {/* BENTO GRID PROJECTS */}
+      {filteredProjects.length > 0 && (
+        <section className="bento-grid">
+          {filteredProjects.map(project => (
+            <div key={project.id} className="bento-card">
+              <div className="bento-card-img-wrap">
+                <img src={project.image} alt={project.title} className="bento-card-img" />
               </div>
-              <div className="gallery-content">
-                <span className="gallery-category">{project.category}</span>
-                <h4 className="gallery-title">{project.title}</h4>
-                <p className="gallery-desc">{project.desc}</p>
+              <div className="bento-card-content">
+                <span className="bento-category">{project.category}</span>
+                <h3 className="bento-title">{project.title}</h3>
+                <p className="bento-desc">{project.desc}</p>
               </div>
             </div>
           ))}
