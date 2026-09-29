@@ -224,7 +224,7 @@ const Gypsum = () => {
       </section>
 
       
-      <ProjectGallery />
+      <ProjectGallery category="gypsum" />
 
       {/* 5. Customer Reviews */}
       <section className="sp-reviews-section">

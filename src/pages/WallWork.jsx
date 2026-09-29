@@ -224,7 +224,7 @@ const WallWork = () => {
       </section>
 
       
-      <ProjectGallery />
+      <ProjectGallery category="wall" />
 
       {/* 5. Customer Reviews */}
       <section className="sp-reviews-section">

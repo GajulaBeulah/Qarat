@@ -213,7 +213,7 @@ const CeilingWork = () => {
       </section>
 
       
-      <ProjectGallery />
+      <ProjectGallery category="ceiling" />
 
       {/* 5. Customer Reviews */}
       <section className="sp-reviews-section">

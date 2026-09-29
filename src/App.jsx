@@ -36,7 +36,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
-          
+
           <Route path="interior-work">
             <Route index element={<InteriorWork />} />
             <Route path="ceiling-work" element={<CeilingWork />} />

@@ -206,7 +206,7 @@ const KitchenWork = () => {
       </section>
 
       
-      <ProjectGallery />
+      <ProjectGallery category="kitchen" />
 
       {/* 5. Customer Reviews */}
       <section className="sp-reviews-section">

@@ -212,7 +212,7 @@ const Panels = () => {
       </section>
 
       
-      <ProjectGallery />
+      <ProjectGallery category="panels" />
 
       {/* 5. Customer Reviews */}
       <section className="sp-reviews-section">

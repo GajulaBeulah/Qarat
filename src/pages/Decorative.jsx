@@ -206,7 +206,7 @@ const Decorative = () => {
       </section>
 
       
-      <ProjectGallery />
+      <ProjectGallery category="decorative" />
 
       {/* 5. Customer Reviews */}
       <section className="sp-reviews-section">
