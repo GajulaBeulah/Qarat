@@ -224,12 +224,7 @@ const Gypsum = () => {
       </section>
 
       
-      <div style={{ padding: '60px 0', backgroundColor: '#F8F4EE' }}>
-        <ProjectGallery category="india-gypsum" title="India Gypsum Board Projects" subtitle="Cost-effective and durable India Gypsum board installations." />
-        <ProjectGallery category="gyproc" title="Gyproc Board Projects" subtitle="High-quality Gyproc false ceiling and drywall partition systems." />
-        <ProjectGallery category="usg" title="USG Boral Projects" subtitle="Premium USG Boral board installations in commercial and residential spaces." />
-        <ProjectGallery category="gypsum-tiles" title="Gypsum Tiles Gallery" subtitle="Modular grid ceilings using decorative and acoustic gypsum tiles." />
-      </div>
+      <ProjectGallery category="gypsum" />
 
       {/* 5. Customer Reviews */}
       <section className="sp-reviews-section">

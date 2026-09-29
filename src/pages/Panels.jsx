@@ -212,11 +212,7 @@ const Panels = () => {
       </section>
 
       
-      <div style={{ padding: '60px 0', backgroundColor: '#F8F4EE' }}>
-        <ProjectGallery category="pvc" title="PVC Panel Projects" subtitle="Durable, water-resistant PVC paneling in varied finishes." />
-        <ProjectGallery category="wpc" title="WPC Panel Projects" subtitle="Luxury WPC wood-composite panels for premium walls." />
-        <ProjectGallery category="fluted" title="Fluted Panel Projects" subtitle="Modern fluted panels creating stunning architectural features." />
-      </div>
+      <ProjectGallery category="panels" />
 
       {/* 5. Customer Reviews */}
       <section className="sp-reviews-section">

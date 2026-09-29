@@ -206,10 +206,7 @@ const Decorative = () => {
       </section>
 
       
-      <div style={{ padding: '60px 0', backgroundColor: '#F8F4EE' }}>
-        <ProjectGallery category="uv-marble" title="UV Marble Sheet Projects" subtitle="High-gloss UV marble sheets offering luxurious stone finishes." />
-        <ProjectGallery category="wallpaper" title="Wallpaper Projects" subtitle="Premium wallpaper installations adding texture and pattern to walls." />
-      </div>
+      <ProjectGallery category="decorative" />
 
       {/* 5. Customer Reviews */}
       <section className="sp-reviews-section">
