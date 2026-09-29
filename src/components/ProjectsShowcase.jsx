@@ -7,7 +7,7 @@ const ProjectsShowcase = () => {
   return (
     <section className="projects-showcase">
       <h2 className="ps-title">Projects Showcase</h2>
-      
+
       <div className="ps-container">
         <Link to="/projects" className="ps-card ps-top">
           <img src="/images/ceiling-hero-new.png" alt="Luxury Residence" className="ps-img" />

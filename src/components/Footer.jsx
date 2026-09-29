@@ -83,7 +83,7 @@ const Footer = () => {
               © 2026 Qarat Interior Decorator. All Rights Reserved.
             </p>
             <p className="footer-legal">
-              Privacy Policy <span>|</span> Terms
+              Designed by <a href="https://edonesolution.com" target="_blank" rel="noopener noreferrer" style={{ color: 'inherit', textDecoration: 'underline' }}>Edone Solution</a>
             </p>
             <button onClick={scrollToTop} className="back-to-top">
               Back to Top &uarr;
