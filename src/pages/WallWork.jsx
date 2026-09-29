@@ -28,7 +28,7 @@ const WallWork = () => {
     {
       id: "wallpaper",
       title: "Wallpaper",
-      img: "/images/project3.jpg",
+      img: "/images/floral-living-room.jpg",
       desc: "Premium collection of large-scale prints and textures to add instant character and depth to any room."
     },
     {
