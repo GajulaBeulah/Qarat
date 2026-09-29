@@ -9,19 +9,33 @@ import './ProjectGallery.css';
 
 const ProjectGallery = ({ category = "all" }) => {
   const allImages = [
-    { src: "/images/pvc-wall.png", alt: "PVC Wall Panel", tags: ["wall", "panels", "decorative"] },
+    { src: "/images/ceiling-1.png", alt: "Modern False Ceiling", tags: ["ceiling", "gypsum"] },
+    { src: "/images/ceiling-2.png", alt: "Cove Lighting Ceiling", tags: ["ceiling", "gypsum"] },
+    { src: "/images/ceiling-3.png", alt: "Bedroom Geometric Ceiling", tags: ["ceiling", "gypsum"] },
+    { src: "/images/ceiling-4.png", alt: "Modern Cove Lighting", tags: ["ceiling", "gypsum"] },
+    { src: "/images/ceiling-5.png", alt: "Ornate POP Ceiling with Fan", tags: ["ceiling", "gypsum"] },
+    { src: "/images/ceiling-hero-new.png", alt: "Luxury Ceiling", tags: ["ceiling", "gypsum"] },
+    { src: "/images/gypsum-partition.png", alt: "Gypsum Partition", tags: ["ceiling", "gypsum"] },
+    
     { src: "/images/gallery-1.jpg", alt: "Kitchen View 1", tags: ["kitchen"] },
     { src: "/images/gallery-2.png", alt: "Kitchen View 2", tags: ["kitchen"] },
     { src: "/images/gallery-3.png", alt: "Wardrobe", tags: ["kitchen"] },
     { src: "/images/gallery-4.png", alt: "Kitchen View 3", tags: ["kitchen"] },
     { src: "/images/kitchen-4.png", alt: "Modular Kitchen", tags: ["kitchen"] },
+    { src: "/images/kitchen-new-grey.jpg", alt: "Grey Modular Kitchen", tags: ["kitchen"] },
+    
+    { src: "/images/pvc-wall.png", alt: "PVC Wall Panel", tags: ["wall", "panels", "decorative"] },
+    { src: "/images/pvc-1.png", alt: "Fluted PVC Panel", tags: ["wall", "panels", "decorative"] },
+    { src: "/images/pvc-2.jpg", alt: "Wood finish PVC", tags: ["wall", "panels", "decorative"] },
     { src: "/images/tv-unit.jpg", alt: "Fluted Panel TV Unit", tags: ["wall", "panels", "decorative"] },
     { src: "/images/marble-wall-1.jpg", alt: "UV Marble Wall Design", tags: ["wall", "panels", "decorative"] },
     { src: "/images/marble-wall-2.png", alt: "UV Marble Sheet TV Unit", tags: ["wall", "panels", "decorative"] },
     { src: "/images/marble-wall-3.jpg", alt: "Wavy UV Marble Pattern", tags: ["wall", "panels", "decorative"] },
-    { src: "/images/ceiling-3.png", alt: "Bedroom Geometric Ceiling", tags: ["ceiling", "gypsum"] },
-    { src: "/images/ceiling-4.png", alt: "Modern Cove Lighting", tags: ["ceiling", "gypsum"] },
-    { src: "/images/ceiling-5.png", alt: "Ornate POP Ceiling with Fan", tags: ["ceiling", "gypsum"] }
+    { src: "/images/uv-marble-supply-new.jpg", alt: "Marble Supply", tags: ["wall", "panels", "decorative"] },
+    { src: "/images/new-upload-1.jpg", alt: "Decorative Wall 1", tags: ["wall", "panels", "decorative"] },
+    { src: "/images/new-upload-2.jpg", alt: "Decorative Wall 2", tags: ["wall", "panels", "decorative"] },
+    { src: "/images/new-upload-3.jpg", alt: "Decorative Space", tags: ["wall", "panels", "decorative"] },
+    { src: "/images/new-upload-4.jpg", alt: "Decorative Space 2", tags: ["wall", "panels", "decorative"] }
   ];
 
   const images = category === "all" ? allImages : allImages.filter(img => img.tags.includes(category));
