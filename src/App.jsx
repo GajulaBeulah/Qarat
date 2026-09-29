@@ -3,6 +3,7 @@ import './index.css';
 
 import Header from './components/Header';
 import Footer from './components/Footer';
+import WhatsAppWidget from './components/WhatsAppWidget';
 
 // Pages
 import Home from './pages/Home';
@@ -27,6 +28,7 @@ const Layout = () => (
       <Outlet />
     </main>
     <Footer />
+    <WhatsAppWidget />
   </div>
 );
 

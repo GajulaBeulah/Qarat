@@ -41,7 +41,7 @@ const InteriorWork = () => {
 
             <Link to="/interior-work/wall-decorative-work" className="cat-card">
               <div className="cat-img-wrapper">
-                <img src="/images/new-upload-3.jpg" alt="Wall Work" className="cat-img" />
+                <img src="/images/floral-living-room.jpg" alt="Wall Work" className="cat-img" />
               </div>
               <div className="cat-content">
                 <h3 className="cat-title">Wall & Decorative Work</h3>

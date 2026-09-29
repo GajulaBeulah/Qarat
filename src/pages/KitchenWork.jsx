@@ -10,7 +10,7 @@ const KitchenWork = () => {
     {
       id: "modular-kitchen",
       title: "Modular Kitchen",
-      img: "/images/project3.jpg",
+      img: "/images/kitchen-new-real.png",
       desc: "Custom, water-resistant modular kitchens designed for smart storage, ergonomics, and effortless daily maintenance."
     },
     {

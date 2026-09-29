@@ -39,7 +39,6 @@ const ProjectGallery = ({ category = "all" }) => {
     { src: "/images/marble-wall-2.png", alt: "UV Marble Sheet TV Unit", tags: ["wall"] },
     { src: "/images/marble-wall-3.jpg", alt: "Wavy UV Marble Pattern", tags: ["decorative"] },
     { src: "/images/uv-marble-supply-new.jpg", alt: "Floral Wallpaper Rolls", tags: ["decorative"] },
-    { src: "/images/wallpaper-geometric.png", alt: "Geometric Wallpaper", tags: ["decorative"] },
     { src: "/images/new-upload-2.jpg", alt: "Decorative Wall 2", tags: ["wall"] },
     { src: "/images/new-upload-3.jpg", alt: "Decorative Space", tags: ["wall"] },
     { src: "/images/new-upload-4.jpg", alt: "Decorative Space 2", tags: ["wall"] }
@@ -71,12 +70,9 @@ const ProjectGallery = ({ category = "all" }) => {
           className="mySwiper horizontal-gallery"
         >
           {images.map((img, idx) => (
-            <SwiperSlide key={idx} className={`gallery-slide shape-${idx % 4}`}>
+            <SwiperSlide key={idx} className="gallery-slide">
               <div className="slide-content">
                 <img src={img.src} alt={img.alt} />
-                <div className="slide-overlay">
-                  <h4>{img.alt}</h4>
-                </div>
               </div>
             </SwiperSlide>
           ))}

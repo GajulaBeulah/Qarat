@@ -99,10 +99,7 @@
 }
 
 .sp-eyebrow-pill .dot {
-  width: 8px;
-  height: 8px;
-  background-color: #B79A6B;
-  border-radius: 50%;
+  display: none;
 }
 
 .sp-eyebrow {

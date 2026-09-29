@@ -96,7 +96,7 @@ const Decorative = () => {
   return (
     <div className="service-page">
                   {/* 2. Hero Section */}
-      <section className="sp-hero" style={{ backgroundImage: `url(/images/kitchen-4.png)` }}>
+      <section className="sp-hero" style={{ backgroundImage: `url(/images/uv-marble-supply-new.jpg)` }}>
         <div className="sp-hero-overlay"></div>
         <div className="sp-container sp-hero-container">
           <div className="sp-hero-content">

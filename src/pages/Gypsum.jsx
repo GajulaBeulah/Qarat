@@ -114,7 +114,7 @@ const Gypsum = () => {
   return (
     <div className="service-page">
                   {/* 2. Hero Section */}
-      <section className="sp-hero" style={{ backgroundImage: `url(/images/ceiling-3.png)` }}>
+      <section className="sp-hero" style={{ backgroundImage: `url(/images/india-gypsum-stack.png)` }}>
         <div className="sp-hero-overlay"></div>
         <div className="sp-container sp-hero-container">
           <div className="sp-hero-content">

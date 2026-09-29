@@ -64,15 +64,6 @@ const Footer = () => {
                 Lucknow, Uttar Pradesh – 226003
               </p>
               <a href="tel:09336411421" className="footer-phone">09336411421</a>
-              
-              <div className="footer-contact-actions">
-                <a href="tel:09336411421" className="footer-action-link">
-                  <Phone size={16} /> Call
-                </a>
-                <a href="https://wa.me/919336411421" className="footer-action-link">
-                  <MessageCircle size={16} /> WhatsApp
-                </a>
-              </div>
             </div>
 
           </div>
@@ -92,16 +83,6 @@ const Footer = () => {
 
         </div>
       </footer>
-
-      {/* Mobile Fixed Action Bar */}
-      <div className="mobile-action-bar">
-        <a href="tel:09336411421">
-          <Phone size={18} /> Call
-        </a>
-        <a href="https://wa.me/919336411421">
-          <MessageCircle size={18} /> WhatsApp
-        </a>
-      </div>
     </>
   );
 };

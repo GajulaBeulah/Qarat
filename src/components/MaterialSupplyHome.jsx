@@ -32,15 +32,9 @@ const MaterialSupplyHome = () => {
           
           {/* Card 1 */}
           <Link to="/material-supply/gypsum-boards-ceiling-materials" className="mhs-card">
-            <img src="/images/ceiling-5.png" alt="Gypsum Boards & Ceiling" className="mhs-card-bg" />
+            <img src="/images/india-gypsum-stack.png" alt="Gypsum Boards & Ceiling" className="mhs-card-bg" />
             <div className="mhs-card-content">
-              <div className="mhs-card-icon-wrapper">
-                <Boxes size={24} className="mhs-card-icon" />
-              </div>
               <h3 className="mhs-card-title">Gypsum Boards & Ceiling Materials</h3>
-              <p className="mhs-card-desc">
-                Gypsum boards, ceiling materials and gypsum tiles for interior applications.
-              </p>
             </div>
           </Link>
 
@@ -48,13 +42,7 @@ const MaterialSupplyHome = () => {
           <Link to="/material-supply/panels" className="mhs-card">
             <img src="/images/new-upload-1.jpg" alt="Panels" className="mhs-card-bg" />
             <div className="mhs-card-content">
-              <div className="mhs-card-icon-wrapper">
-                <Layers size={24} className="mhs-card-icon" />
-              </div>
               <h3 className="mhs-card-title">Panels</h3>
-              <p className="mhs-card-desc">
-                PVC panels, WPC panels, and fluted panels offering durability and aesthetic appeal.
-              </p>
             </div>
           </Link>
 
@@ -62,13 +50,7 @@ const MaterialSupplyHome = () => {
           <Link to="/material-supply/decorative-materials" className="mhs-card">
             <img src="/images/uv-marble-supply-new.jpg" alt="Decorative Materials" className="mhs-card-bg" />
             <div className="mhs-card-content">
-              <div className="mhs-card-icon-wrapper">
-                <Palette size={24} className="mhs-card-icon" />
-              </div>
               <h3 className="mhs-card-title">Decorative Materials</h3>
-              <p className="mhs-card-desc">
-                Premium finishes including UV marble sheets and custom wallpapers.
-              </p>
             </div>
           </Link>
 

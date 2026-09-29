@@ -14,44 +14,76 @@ const projectData = [
     desc: 'Modern false ceiling with integrated linear lighting for a professional workspace.'
   },
   {
-    id: 2,
-    image: '/images/gypsum-gyproc.png',
-    category: 'Gypsum Boards',
-    subcategories: ['All', 'Gypsum Boards & Ceiling Materials'],
-    title: 'Premium Gypsum Installation',
-    desc: 'High-quality gypsum boards installed for superior acoustic and thermal insulation.'
+    id: 7,
+    image: '/images/ceiling-1.png',
+    category: 'Ceiling Work',
+    subcategories: ['All', 'Ceiling Work'],
+    title: 'Gypsum False Ceiling',
+    desc: 'Seamless, smooth fire-resistant finish. Ideal for premium and modern living rooms and offices.'
   },
   {
-    id: 3,
+    id: 8,
+    image: '/images/ceiling-5.png',
+    category: 'Ceiling Work',
+    subcategories: ['All', 'Ceiling Work'],
+    title: 'POP Murga Jali',
+    desc: 'Highly durable and traditional ceiling design, perfect for intricate and curved custom shapes.'
+  },
+  {
+    id: 13,
+    image: '/images/new-upload-1.jpg',
+    category: 'Wall & Decorative Work',
+    subcategories: ['All', 'Wall & Decorative Work'],
+    title: 'WPC (Wood Plastic Composite) Panel',
+    desc: 'Premium WPC fluted panels for durable and aesthetic wood-like finishes.'
+  },
+  {
+    id: 14,
+    image: '/images/pvc-2.jpg',
+    category: 'Wall & Decorative Work',
+    subcategories: ['All', 'Wall & Decorative Work'],
+    title: 'PVC Panel',
+    desc: 'Moisture-resistant and cost-effective wall paneling for any room.'
+  },
+  {
+    id: 15,
+    image: '/images/uv-marble-supply-new.jpg',
+    category: 'Wall & Decorative Work',
+    subcategories: ['All', 'Wall & Decorative Work'],
+    title: 'UV Marble Sheet',
+    desc: 'High-gloss, elegant marble-like finish without the cost of real stone.'
+  },
+  {
+    id: 16,
+    image: '/images/wallpaper-floral.jpg',
+    category: 'Wall & Decorative Work',
+    subcategories: ['All', 'Wall & Decorative Work'],
+    title: 'Wallpaper',
+    desc: 'Premium floral wallpaper installation for a seamless and elegant interior accent.'
+  },
+  {
+    id: 17,
     image: '/images/new-upload-3.jpg',
     category: 'Wall & Decorative Work',
     subcategories: ['All', 'Wall & Decorative Work'],
-    title: 'Living Room Feature Wall',
-    desc: 'Custom fluted paneling integrated with a sleek entertainment unit.'
+    title: 'Fluted Panel',
+    desc: 'Custom-designed fluted wall panels offering a contemporary look and texture.'
   },
   {
-    id: 4,
-    image: '/images/new-upload-1.jpg',
-    category: 'Panels',
-    subcategories: ['All', 'Panels'],
-    title: 'WPC Fluted Paneling',
-    desc: 'Durable and aesthetic wood-plastic composite panels for a natural wood finish.'
-  },
-  {
-    id: 5,
-    image: '/images/uv-marble-supply-new.jpg',
-    category: 'Decorative Materials',
-    subcategories: ['All', 'Decorative Materials'],
-    title: 'Luxury Bedroom Interior',
-    desc: 'Featuring a high-gloss UV Marble Sheet backdrop and custom modular furniture.'
-  },
-  {
-    id: 6,
-    image: '/images/kitchen-4.png',
+    id: 18,
+    image: '/images/gallery-1.jpg',
     category: 'Modular Kitchen & Furniture',
     subcategories: ['All', 'Modular Kitchen & Furniture'],
-    title: 'Modern Modular Kitchen',
-    desc: 'Seamless handle-less cabinets with premium finishes and smart storage solutions.'
+    title: 'Modular Kitchen',
+    desc: 'Custom, water-resistant modular kitchens designed for smart storage, ergonomics, and effortless daily maintenance.'
+  },
+  {
+    id: 19,
+    image: '/images/project4.jpg',
+    category: 'Modular Kitchen & Furniture',
+    subcategories: ['All', 'Modular Kitchen & Furniture'],
+    title: 'Modular Furniture',
+    desc: 'Intelligent, space-maximizing custom furniture solutions tailored to fit your exact dimensions and stylistic preferences.'
   }
 ];
 
@@ -59,10 +91,7 @@ const categories = [
   'All', 
   'Ceiling Work', 
   'Wall & Decorative Work', 
-  'Modular Kitchen & Furniture', 
-  'Gypsum Boards & Ceiling Materials', 
-  'Panels', 
-  'Decorative Materials'
+  'Modular Kitchen & Furniture'
 ];
 
 const Projects = () => {
