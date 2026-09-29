@@ -16,7 +16,7 @@ const Decorative = () => {
     {
       id: "wallpaper",
       title: "Wallpaper Rolls",
-      img: "/images/wallpaper-geometric.png",
+      img: "/images/floral-wallpaper.png",
       desc: "Imported and domestic premium wallpaper rolls including heavy-duty vinyl, 3D textures, and metallic accents."
     }
   ];
