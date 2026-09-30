@@ -1,7 +1,7 @@
 .material-home-section {
   padding: 100px 24px;
   background-color: #FDFBF7;
-  font-family: 'Manrope', sans-serif;
+  font-family: var(--font-body);
   color: #24211E;
 }
 
@@ -54,7 +54,7 @@
 }
 
 .mhs-title {
-  font-family: 'Playfair Display', serif;
+  font-family: var(--font-heading);
   font-size: 46px;
   font-weight: 600;
   line-height: 1.15;
@@ -187,7 +187,7 @@
 }
 
 .mhs-card-title {
-  font-family: 'Manrope', sans-serif;
+  font-family: var(--font-body);
   font-size: 1.4rem;
   font-weight: 600;
   margin: 0 0 12px 0;

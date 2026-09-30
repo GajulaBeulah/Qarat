@@ -6,7 +6,7 @@
   left: 0;
   width: 100%;
   z-index: 1000;
-  font-family: 'Manrope', sans-serif;
+  font-family: var(--font-body);
   transition: background-color 0.3s ease, border-bottom 0.3s ease, box-shadow 0.3s ease;
   background-color: transparent;
   border-bottom: 1px solid transparent;

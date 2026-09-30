@@ -1,7 +1,7 @@
 .location-section {
   background-color: #F7F4EF; /* Warm Ivory background */
   padding: 100px 24px;
-  font-family: 'Manrope', sans-serif;
+  font-family: var(--font-body);
   color: #292725;
 }
 
@@ -53,7 +53,7 @@
 }
 
 .location-title {
-  font-family: 'Playfair Display', serif;
+  font-family: var(--font-heading);
   font-size: 36px;
   font-weight: 600;
   line-height: 1.25;
@@ -92,7 +92,7 @@
 }
 
 .address-title {
-  font-family: 'Playfair Display', serif;
+  font-family: var(--font-heading);
   font-size: 22px;
   font-weight: 600;
   color: #24211E;
@@ -211,7 +211,7 @@
 }
 
 .map-business-name {
-  font-family: 'Playfair Display', serif;
+  font-family: var(--font-heading);
   font-size: 24px;
   font-weight: 600;
   color: #24211E;

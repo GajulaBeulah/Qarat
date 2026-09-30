@@ -31,7 +31,7 @@
 }
 
 .hero-title {
-  font-family: 'Playfair Display', serif;
+  font-family: var(--font-heading);
   font-size: 38px;
   font-weight: 700;
   color: #FFFFFF;
@@ -41,7 +41,7 @@
 }
 
 .hero-desc {
-  font-family: 'Manrope', sans-serif;
+  font-family: var(--font-body);
   font-size: 0.95rem;
   color: #FFFFFF; /* Changed from grey to white for better contrast with shadow */
   line-height: 1.6;
@@ -62,7 +62,7 @@
   gap: 12px;
   background: transparent;
   color: #FFFFFF;
-  font-family: 'Manrope', sans-serif;
+  font-family: var(--font-body);
   font-size: 1rem;
   font-weight: 500;
   padding: 12px 24px;
@@ -132,7 +132,7 @@
 }
 
 .card-overlay h3 {
-  font-family: 'Manrope', sans-serif;
+  font-family: var(--font-body);
   font-size: 1.1rem;
   font-weight: 600;
   color: #FFF;

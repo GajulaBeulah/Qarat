@@ -13,7 +13,7 @@
 
 .projects-intro-eyebrow {
   display: inline-block;
-  font-family: 'Manrope', sans-serif;
+  font-family: var(--font-body);
   font-size: 0.9rem;
   font-weight: 700;
   color: #B79A6B;
@@ -23,7 +23,7 @@
 }
 
 .projects-intro-title {
-  font-family: 'Playfair Display', serif;
+  font-family: var(--font-heading);
   font-size: 36px;
   font-weight: 700;
   color: #24211E;
@@ -31,7 +31,7 @@
 }
 
 .projects-intro-desc {
-  font-family: 'Manrope', sans-serif;
+  font-family: var(--font-body);
   font-size: 1.1rem;
   line-height: 1.8;
   color: #6F6962;
@@ -63,7 +63,7 @@
   border: 1px solid #E4DED5;
   padding: 10px 24px;
   border-radius: 30px;
-  font-family: 'Manrope', sans-serif;
+  font-family: var(--font-body);
   font-size: 0.95rem;
   color: #6F6962;
   cursor: pointer;
@@ -131,7 +131,7 @@
 }
 
 .bento-category {
-  font-family: 'Manrope', sans-serif;
+  font-family: var(--font-body);
   font-size: 0.75rem;
   font-weight: 700;
   color: #B79A6B;
@@ -141,7 +141,7 @@
 }
 
 .bento-title {
-  font-family: 'Playfair Display', serif;
+  font-family: var(--font-heading);
   font-size: 22px;
   font-weight: 700;
   color: #24211E;
@@ -150,7 +150,7 @@
 }
 
 .bento-desc {
-  font-family: 'Manrope', sans-serif;
+  font-family: var(--font-body);
   font-size: 0.95rem;
   line-height: 1.6;
   color: #6F6962;

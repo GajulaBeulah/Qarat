@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Nunito:wght@300;400;500;600;700;800&display=swap');
 
 :root {
   /* Colors */
@@ -6,16 +6,17 @@
   --bg-secondary: #F5F5F5;
   --text-primary: #1A1A1A;
   --text-secondary: #4A5568;
-  --accent-primary: #B79A6B; /* Signature Gold */
+  --accent-primary: #B79A6B;
+  /* Signature Gold */
   --accent-hover: #967B54;
 
   /* Typography */
-  --font-heading: 'Outfit', sans-serif;
-  --font-body: 'Inter', sans-serif;
+  --font-heading: 'Lora', serif;
+  --font-body: 'Nunito', sans-serif;
 
   /* Shadows */
-  --shadow-sm: 0 2px 4px rgba(0,0,0,0.05);
-  --shadow-md: 0 4px 12px rgba(0,0,0,0.08);
+  --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
 * {
@@ -31,7 +32,12 @@ body {
   line-height: 1.6;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: var(--font-heading);
   color: var(--text-primary);
   font-weight: 600;
@@ -41,10 +47,13 @@ h1, h2, h3, h4, h5, h6 {
 a {
   text-decoration: none;
   color: inherit;
+  font-family: var(--font-body);
+  font-weight: 600;
 }
 
 button {
-  font-family: inherit;
+  font-family: var(--font-body);
+  font-weight: 600;
   cursor: pointer;
   border: none;
   outline: none;

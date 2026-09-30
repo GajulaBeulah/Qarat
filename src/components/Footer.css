@@ -2,7 +2,7 @@
   background-color: #24211E; /* Deep Charcoal */
   color: #FFFFFF;
   padding: 80px 24px 0;
-  font-family: 'Manrope', sans-serif;
+  font-family: var(--font-body);
   position: relative;
 }
 
@@ -17,7 +17,7 @@
 }
 
 .footer-brand {
-  font-family: 'Playfair Display', serif;
+  font-family: var(--font-heading);
   font-size: 28px;
   font-weight: 700;
   color: #FFFFFF;
@@ -73,7 +73,7 @@
 }
 
 .footer-col-title {
-  font-family: 'Playfair Display', serif;
+  font-family: var(--font-heading);
   font-size: 18px;
   font-weight: 600;
   color: #FFFFFF;
@@ -208,7 +208,7 @@
   align-items: center;
   gap: 5px;
   transition: color 0.3s ease;
-  font-family: 'Manrope', sans-serif;
+  font-family: var(--font-body);
 }
 
 .back-to-top:hover {

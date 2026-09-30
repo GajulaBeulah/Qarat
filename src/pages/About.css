@@ -45,7 +45,7 @@
 
 .about-eyebrow {
   display: inline-block;
-  font-family: 'Manrope', sans-serif;
+  font-family: var(--font-body);
   font-size: 0.9rem;
   font-weight: 700;
   color: #B79A6B;
@@ -55,7 +55,7 @@
 }
 
 .about-title {
-  font-family: 'Playfair Display', serif;
+  font-family: var(--font-heading);
   font-size: 42px;
   font-weight: 700;
   color: #24211E;
@@ -70,7 +70,7 @@
 }
 
 .about-desc {
-  font-family: 'Manrope', sans-serif;
+  font-family: var(--font-body);
   font-size: 1.1rem;
   line-height: 1.8;
   color: #6F6962;
@@ -145,7 +145,7 @@
 }
 
 .feature-title {
-  font-family: 'Playfair Display', serif;
+  font-family: var(--font-heading);
   font-size: 24px;
   font-weight: 700;
   color: #24211E;
@@ -159,7 +159,7 @@
 }
 
 .feature-list li {
-  font-family: 'Manrope', sans-serif;
+  font-family: var(--font-body);
   font-size: 0.95rem;
   color: #6F6962;
   margin-bottom: 12px;

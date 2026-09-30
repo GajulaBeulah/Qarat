@@ -5,7 +5,7 @@
 }
 
 .ps-title {
-  font-family: 'Playfair Display', serif;
+  font-family: var(--font-heading);
   font-size: 32px;
   font-weight: 700;
   text-transform: uppercase;
@@ -86,7 +86,7 @@
 }
 
 .ps-card-title {
-  font-family: 'Playfair Display', serif;
+  font-family: var(--font-heading);
   font-size: 24px;
   font-weight: 700;
   color: #FFFFFF;
@@ -96,7 +96,7 @@
 }
 
 .ps-card-subtitle {
-  font-family: 'Manrope', sans-serif;
+  font-family: var(--font-body);
   font-size: 1rem;
   color: #D8D2CA;
   text-transform: uppercase;
@@ -144,7 +144,7 @@
   background-color: #24211E;
   color: #FFFFFF;
   padding: 14px 32px;
-  font-family: 'Manrope', sans-serif;
+  font-family: var(--font-body);
   font-size: 0.95rem;
   font-weight: 600;
   text-transform: uppercase;

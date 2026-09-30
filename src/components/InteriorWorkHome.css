@@ -1,7 +1,7 @@
 .interior-bento-section {
   padding: 100px 24px;
   background-color: #F7F4EF;
-  font-family: 'Manrope', sans-serif;
+  font-family: var(--font-body);
   color: #24211E;
 }
 
@@ -27,7 +27,7 @@
 }
 
 .ib-title {
-  font-family: 'Playfair Display', serif;
+  font-family: var(--font-heading);
   font-size: 42px;
   font-weight: 700;
   line-height: 1.2;
@@ -151,7 +151,7 @@
 }
 
 .ib-card-title {
-  font-family: 'Playfair Display', serif;
+  font-family: var(--font-heading);
   font-size: 1.35rem;
   font-weight: 700;
   color: #24211E;
@@ -174,7 +174,7 @@
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  font-family: 'Manrope', sans-serif;
+  font-family: var(--font-body);
   font-size: 1rem;
   font-weight: 700;
   color: #24211E;

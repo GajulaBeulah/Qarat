@@ -9,7 +9,7 @@
 }
 
 .contact-title {
-  font-family: 'Playfair Display', serif;
+  font-family: var(--font-heading);
   font-size: 32px;
   font-weight: 700;
   text-transform: uppercase;
@@ -47,7 +47,7 @@
   background-color: #FFFFFF;
   border: 1px solid #E4DED5;
   border-radius: 4px;
-  font-family: 'Manrope', sans-serif;
+  font-family: var(--font-body);
   font-size: 1rem;
   color: #24211E;
   transition: border-color 0.3s ease;
@@ -74,7 +74,7 @@ textarea.contact-input {
   color: #FFFFFF;
   border: none;
   border-radius: 4px;
-  font-family: 'Manrope', sans-serif;
+  font-family: var(--font-body);
   font-size: 1rem;
   font-weight: 700;
   text-transform: uppercase;
@@ -93,7 +93,7 @@ textarea.contact-input {
 }
 
 .info-eyebrow {
-  font-family: 'Manrope', sans-serif;
+  font-family: var(--font-body);
   font-size: 0.9rem;
   font-weight: 700;
   text-transform: uppercase;
@@ -103,7 +103,7 @@ textarea.contact-input {
 }
 
 .info-brand {
-  font-family: 'Playfair Display', serif;
+  font-family: var(--font-heading);
   font-size: 24px;
   font-weight: 700;
   text-transform: uppercase;
@@ -112,7 +112,7 @@ textarea.contact-input {
 }
 
 .info-detail {
-  font-family: 'Manrope', sans-serif;
+  font-family: var(--font-body);
   font-size: 1.05rem;
   line-height: 1.6;
   color: #24211E;

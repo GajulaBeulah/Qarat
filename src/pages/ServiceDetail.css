@@ -1,6 +1,6 @@
 /* CeilingWork.css */
 .service-page {
-  font-family: 'Manrope', sans-serif;
+  font-family: var(--font-body);
   color: #24211E;
   background-color: #F7F4EF;
 }
@@ -36,7 +36,7 @@
 }
 
 .service-page h2 {
-  font-family: 'Playfair Display', serif;
+  font-family: var(--font-heading);
   font-size: 36px;
   margin: 0 0 20px 0;
   color: #24211E;
@@ -112,7 +112,7 @@
 }
 
 .sp-title {
-  font-family: 'Playfair Display', serif;
+  font-family: var(--font-heading);
   font-size: 56px;
   font-weight: 700;
   line-height: 1.15;
@@ -241,7 +241,7 @@
 }
 
 .sp-stat-value {
-  font-family: 'Playfair Display', serif;
+  font-family: var(--font-heading);
   font-size: 28px;
   font-weight: 700;
   color: #24211E;
@@ -357,7 +357,7 @@
 }
 
 .sp-service-content h3 {
-  font-family: 'Playfair Display', serif;
+  font-family: var(--font-heading);
   font-size: 22px;
   margin: 0 0 15px 0;
   color: #24211E;
@@ -407,7 +407,7 @@
 }
 
 .sp-about-content h2 {
-  font-family: 'Playfair Display', serif;
+  font-family: var(--font-heading);
   font-size: 48px;
   color: #24211E;
   margin-bottom: 25px;
@@ -603,7 +603,7 @@
   justify-content: center;
   font-weight: 700;
   font-size: 1.2rem;
-  font-family: 'Playfair Display', serif;
+  font-family: var(--font-heading);
 }
 
 .sp-review-author h4 {
@@ -631,7 +631,7 @@
 
 .sp-faq-section h2 {
   color: #FFFFFF;
-  font-family: 'Playfair Display', serif;
+  font-family: var(--font-heading);
   font-size: 42px;
   margin-bottom: 40px;
 }

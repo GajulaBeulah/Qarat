@@ -63,7 +63,7 @@ const Footer = () => {
                 <span itemProp="streetAddress">Ali Nawab Market, Hardoi Road, Dubagga</span>,<br />
                 <span itemProp="addressLocality">Lucknow</span>, <span itemProp="addressRegion">Uttar Pradesh</span> – <span itemProp="postalCode">226003</span>
               </p>
-              <a href="tel:09336411421" className="footer-phone" itemProp="telephone">09336411421</a>
+
               
               <div style={{ display: 'none' }}>
                 <a href="https://www.facebook.com/qarat" itemProp="sameAs">Facebook</a>

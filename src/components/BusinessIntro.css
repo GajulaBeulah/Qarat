@@ -32,7 +32,7 @@
 
 .bi-eyebrow {
   display: inline-block;
-  font-family: 'Manrope', sans-serif;
+  font-family: var(--font-body);
   font-size: 0.9rem;
   font-weight: 700;
   color: #B79A6B;
@@ -42,7 +42,7 @@
 }
 
 .bi-title {
-  font-family: 'Playfair Display', serif;
+  font-family: var(--font-heading);
   font-size: 38px;
   font-weight: 700;
   color: #24211E;
@@ -56,7 +56,7 @@
 }
 
 .bi-desc {
-  font-family: 'Manrope', sans-serif;
+  font-family: var(--font-body);
   font-size: 1.05rem;
   line-height: 1.7;
   color: #6F6962;
@@ -79,7 +79,7 @@
   display: inline-flex;
   align-items: center;
   gap: 10px;
-  font-family: 'Manrope', sans-serif;
+  font-family: var(--font-body);
   font-size: 0.95rem;
   font-weight: 700;
   color: #24211E;
@@ -165,7 +165,7 @@
 }
 
 .bi-card-title {
-  font-family: 'Playfair Display', serif;
+  font-family: var(--font-heading);
   font-size: 22px;
   font-weight: 700;
   color: #FFFFFF;

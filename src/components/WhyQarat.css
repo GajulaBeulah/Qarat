@@ -1,7 +1,7 @@
 .why-qarat-section {
   padding: 100px 24px;
   background-color: #24211E;
-  font-family: 'Manrope', sans-serif;
+  font-family: var(--font-body);
   color: #FFFFFF;
   overflow: hidden; /* Prevent floating cards from causing horizontal scroll */
 }
@@ -128,7 +128,7 @@
 }
 
 .why-title {
-  font-family: 'Playfair Display', serif;
+  font-family: var(--font-heading);
   font-size: 42px;
   font-weight: 700;
   line-height: 1.2;
@@ -187,7 +187,7 @@
 }
 
 .benefit-title {
-  font-family: 'Manrope', sans-serif;
+  font-family: var(--font-body);
   font-size: 1.1rem;
   font-weight: 700;
   color: #FFFFFF;

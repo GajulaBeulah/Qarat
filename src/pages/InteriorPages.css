@@ -40,7 +40,7 @@
 }
 
 .page-eyebrow {
-  font-family: 'Manrope', sans-serif;
+  font-family: var(--font-body);
   font-size: 0.9rem;
   font-weight: 700;
   letter-spacing: 0.15em;
@@ -50,7 +50,7 @@
 }
 
 .page-title {
-  font-family: 'Playfair Display', serif;
+  font-family: var(--font-heading);
   font-size: 42px;
   font-weight: 700;
   margin: 0 0 20px 0;
@@ -64,7 +64,7 @@
 }
 
 .page-desc {
-  font-family: 'Manrope', sans-serif;
+  font-family: var(--font-body);
   font-size: 1.1rem;
   line-height: 1.7;
   color: #D8D2CA;
@@ -181,7 +181,7 @@
 }
 
 .cat-title {
-  font-family: 'Playfair Display', serif;
+  font-family: var(--font-heading);
   font-size: 24px;
   font-weight: 700;
   margin: 0 0 15px 0;
@@ -195,7 +195,7 @@
 }
 
 .cat-list li {
-  font-family: 'Manrope', sans-serif;
+  font-family: var(--font-body);
   font-size: 0.95rem;
   color: #6F6962;
   margin-bottom: 8px;
@@ -211,7 +211,7 @@
 }
 
 .cat-link {
-  font-family: 'Manrope', sans-serif;
+  font-family: var(--font-body);
   font-size: 0.95rem;
   font-weight: 700;
   color: #B79A6B;
@@ -247,7 +247,7 @@
 }
 
 .sidebar-title {
-  font-family: 'Playfair Display', serif;
+  font-family: var(--font-heading);
   font-size: 20px;
   font-weight: 700;
   color: #24211E;
@@ -266,7 +266,7 @@
 }
 
 .sidebar-nav a {
-  font-family: 'Manrope', sans-serif;
+  font-family: var(--font-body);
   font-size: 1rem;
   color: #6F6962;
   text-decoration: none;
@@ -301,7 +301,7 @@
 }
 
 .service-block-title {
-  font-family: 'Playfair Display', serif;
+  font-family: var(--font-heading);
   font-size: 32px;
   font-weight: 700;
   color: #24211E;
@@ -309,7 +309,7 @@
 }
 
 .service-block-desc {
-  font-family: 'Manrope', sans-serif;
+  font-family: var(--font-body);
   font-size: 1.05rem;
   line-height: 1.7;
   color: #6F6962;

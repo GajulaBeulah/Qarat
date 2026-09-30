@@ -14,7 +14,7 @@
 
 .project-cta .cta-eyebrow {
   display: inline-block;
-  font-family: 'Manrope', sans-serif;
+  font-family: var(--font-body);
   font-size: 0.9rem;
   font-weight: 700;
   color: #B79A6B;
@@ -24,7 +24,7 @@
 }
 
 .project-cta .cta-title {
-  font-family: 'Playfair Display', serif;
+  font-family: var(--font-heading);
   font-size: 42px;
   font-weight: 700;
   color: #FFFFFF;
@@ -32,7 +32,7 @@
 }
 
 .project-cta .cta-desc {
-  font-family: 'Manrope', sans-serif;
+  font-family: var(--font-body);
   font-size: 1.1rem;
   line-height: 1.7;
   color: rgba(255, 255, 255, 0.7);
