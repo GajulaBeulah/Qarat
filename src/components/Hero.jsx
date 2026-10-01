@@ -33,7 +33,7 @@ const Hero = () => {
         <div className="hero-card card-center">
           <img src="/images/ceiling-5.png" alt="False Ceiling" />
           <div className="card-overlay">
-            <h3>False Ceiling</h3>
+            <h3>PVC False Ceiling</h3>
           </div>
         </div>
 
