@@ -105,7 +105,7 @@ const Decorative = () => {
               <span className="sp-eyebrow">MATERIAL SUPPLY</span>
             </div>
             
-            <h1 className="sp-title">Best Decorative Materials in lucknow</h1>
+            <h1 className="sp-title">Best PVC TV Unit in lucknow</h1>
             <p className="sp-desc">
               Supply of high-end decorative finishes including UV Marble Sheets and premium Wallpapers for residential and commercial projects.
             </p>

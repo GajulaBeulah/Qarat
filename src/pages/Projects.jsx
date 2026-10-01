@@ -7,7 +7,7 @@ import './Projects.css';
 const projectData = [
   {
     id: 1,
-    image: '/images/ceiling-4.png',
+    image: '/images/interior-work-new.jpg',
     category: 'Ceiling Work',
     subcategories: ['All', 'Ceiling Work'],
     title: 'Corporate Office Ceiling',
@@ -55,7 +55,7 @@ const projectData = [
   },
   {
     id: 16,
-    image: '/images/wallpaper-floral.jpg',
+    image: '/images/floral-wallpaper.png',
     category: 'Wall & Decorative Work',
     subcategories: ['All', 'Wall & Decorative Work'],
     title: 'Wallpaper',

@@ -32,9 +32,9 @@ const MaterialSupplyHome = () => {
           
           {/* Card 1 */}
           <Link to="/material-supply/gypsum-boards-ceiling-materials" className="mhs-card">
-            <img src="/images/india-gypsum-stack.png" alt="Gypsum Boards & Ceiling" className="mhs-card-bg" />
+            <img src="/images/india-gypsum-stack.png" alt="Gypsum Tiles False Ceiling" className="mhs-card-bg" />
             <div className="mhs-card-content">
-              <h3 className="mhs-card-title">Gypsum Boards & Ceiling Materials</h3>
+              <h3 className="mhs-card-title">Gypsum Tiles False Ceiling</h3>
             </div>
           </Link>
 
@@ -48,9 +48,9 @@ const MaterialSupplyHome = () => {
 
           {/* Card 3 */}
           <Link to="/material-supply/decorative-materials" className="mhs-card">
-            <img src="/images/uv-marble-supply-new.jpg" alt="Decorative Materials" className="mhs-card-bg" />
+            <img src="/images/uv-marble-supply-new.jpg" alt="PVC TV Unit" className="mhs-card-bg" />
             <div className="mhs-card-content">
-              <h3 className="mhs-card-title">Decorative Materials</h3>
+              <h3 className="mhs-card-title">PVC TV Unit</h3>
             </div>
           </Link>
 

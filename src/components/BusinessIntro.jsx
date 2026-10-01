@@ -33,7 +33,7 @@ const BusinessIntro = () => {
           
           {/* Card 1 */}
           <div className="bi-card">
-            <img src="/images/ceiling-4.png" alt="Ceiling Solutions" className="bi-card-bg" />
+            <img src="/images/interior-work-new.jpg" alt="Ceiling Solutions" className="bi-card-bg" />
             <div className="bi-card-overlay">
               <div className="bi-card-icon">
                 <Hammer size={24} color="#B79A6B" />
@@ -49,7 +49,7 @@ const BusinessIntro = () => {
               <div className="bi-card-icon">
                 <Cuboid size={24} color="#B79A6B" />
               </div>
-              <h3 className="bi-card-title">Material Supply</h3>
+              <h3 className="bi-card-title">WPC Material Supply</h3>
             </div>
           </div>
 
@@ -71,7 +71,7 @@ const BusinessIntro = () => {
               <div className="bi-card-icon">
                 <Sparkles size={24} color="#B79A6B" />
               </div>
-              <h3 className="bi-card-title">Decorative Elements</h3>
+              <h3 className="bi-card-title">PVC TV Unit</h3>
             </div>
           </div>
 

@@ -61,9 +61,9 @@ const Header = () => {
                 Material Supply <ChevronDown size={14} />
               </span>
               <div className="dropdown-menu">
-                <Link to="/material-supply/gypsum-boards-ceiling-materials" className="dropdown-item">Gypsum Boards & Ceiling Materials</Link>
+                <Link to="/material-supply/gypsum-boards-ceiling-materials" className="dropdown-item">Gypsum Tiles False Ceiling</Link>
                 <Link to="/material-supply/panels" className="dropdown-item">Panels</Link>
-                <Link to="/material-supply/decorative-materials" className="dropdown-item">Decorative Materials</Link>
+                <Link to="/material-supply/decorative-materials" className="dropdown-item">PVC TV Unit</Link>
               </div>
             </div>
 
@@ -101,9 +101,9 @@ const Header = () => {
           <div>
             <Link to="/material-supply" className="mobile-nav-link" style={{border: 'none', paddingBottom: 0}} onClick={closeMobileMenu}>Material Supply</Link>
             <div className="mobile-nav-group-title">Products</div>
-            <Link to="/material-supply/gypsum-boards-ceiling-materials" className="mobile-sub-link" onClick={closeMobileMenu}>Gypsum Boards & Ceiling Materials</Link>
+            <Link to="/material-supply/gypsum-boards-ceiling-materials" className="mobile-sub-link" onClick={closeMobileMenu}>Gypsum Tiles False Ceiling</Link>
             <Link to="/material-supply/panels" className="mobile-sub-link" onClick={closeMobileMenu}>Panels</Link>
-            <Link to="/material-supply/decorative-materials" className="mobile-sub-link" onClick={closeMobileMenu}>Decorative Materials</Link>
+            <Link to="/material-supply/decorative-materials" className="mobile-sub-link" onClick={closeMobileMenu}>PVC TV Unit</Link>
           </div>
 
           <Link to="/projects" className="mobile-nav-link" onClick={closeMobileMenu}>Projects</Link>

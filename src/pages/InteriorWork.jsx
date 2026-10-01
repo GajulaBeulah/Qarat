@@ -25,7 +25,7 @@ const InteriorWork = () => {
             
             <Link to="/interior-work/ceiling-work" className="cat-card">
               <div className="cat-img-wrapper">
-                <img src="/images/ceiling-4.png" alt="Ceiling Work" className="cat-img" />
+                <img src="/images/interior-work-new.jpg" alt="Ceiling Work" className="cat-img" />
               </div>
               <div className="cat-content">
                 <h3 className="cat-title">Ceiling Work</h3>

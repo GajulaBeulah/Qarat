@@ -24,7 +24,7 @@ const InteriorWorkHome = () => {
         <div className="ib-cards-wrapper">
           <Link to="/interior-work/ceiling-work" className="ib-card">
             <div className="ib-img-arch">
-              <img src="/images/ceiling-4.png" alt="Ceiling Work" />
+              <img src="/images/interior-work-new.jpg" alt="Ceiling Work" />
             </div>
             <div className="ib-card-content">
               <h3 className="ib-card-title">Ceiling Work</h3>

@@ -11,7 +11,7 @@ const CeilingWork = () => {
     {
       id: "gypsum",
       title: "Gypsum False Ceiling",
-      img: "/images/ceiling-4.png",
+      img: "/images/gypsum-ceiling-new.jpg",
       desc: "Seamless, smooth fire-resistant finish. Ideal for premium and modern living rooms and offices."
     },
     {
@@ -204,7 +204,7 @@ const CeilingWork = () => {
           
           <div className="sp-about-images">
             <img src="/images/ceiling-3.png" alt="Interior Details" className="sp-main-img" />
-            <img src="/images/ceiling-4.png" alt="Interior Decor" className="sp-circle-img" />
+            <img src="/images/interior-work-new.jpg" alt="Interior Decor" className="sp-circle-img" />
             <div className="sp-play-btn-box">
               <PlayCircle size={40} fill="#24211E" color="#FFF" />
             </div>

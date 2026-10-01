@@ -106,6 +106,7 @@
 }
 
 .bento-card-img-wrap {
+  height: 260px;
   flex: 0 0 260px;
   position: relative;
   overflow: hidden;

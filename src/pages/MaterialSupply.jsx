@@ -25,10 +25,10 @@ const MaterialSupply = () => {
             
             <Link to="/material-supply/gypsum-boards-ceiling-materials" className="cat-card">
               <div className="cat-img-wrapper">
-                <img src="/images/gypsum-gyproc.png" alt="Gypsum Boards & Ceiling" className="cat-img" />
+                <img src="/images/gypsum-gyproc.png" alt="Gypsum Tiles False Ceiling" className="cat-img" />
               </div>
               <div className="cat-content">
-                <h3 className="cat-title">Gypsum Boards & Ceiling</h3>
+                <h3 className="cat-title">Gypsum Tiles False Ceiling</h3>
                 <ul className="cat-list">
                   <li>India Gypsum</li>
                   <li>Gyproc</li>
@@ -57,10 +57,10 @@ const MaterialSupply = () => {
 
             <Link to="/material-supply/decorative-materials" className="cat-card">
               <div className="cat-img-wrapper">
-                <img src="/images/uv-marble-supply-new.jpg" alt="Decorative Materials" className="cat-img" />
+                <img src="/images/uv-marble-supply-new.jpg" alt="PVC TV Unit" className="cat-img" />
               </div>
               <div className="cat-content">
-                <h3 className="cat-title">Decorative Materials</h3>
+                <h3 className="cat-title">PVC TV Unit</h3>
                 <ul className="cat-list">
                   <li>UV Marble Sheets</li>
                   <li>Modern Wallpapers</li>

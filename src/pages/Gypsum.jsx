@@ -123,7 +123,7 @@ const Gypsum = () => {
               <span className="sp-eyebrow">MATERIAL SUPPLY</span>
             </div>
             
-            <h1 className="sp-title">Best Gypsum Boards & Ceiling Materials in lucknow</h1>
+            <h1 className="sp-title">Best Gypsum Tiles False Ceiling in lucknow</h1>
             <p className="sp-desc">
               We are a leading supplier of premium gypsum boards, ceiling channels, and accessories from top brands like Gyproc and USG Boral.
             </p>
@@ -215,7 +215,7 @@ const Gypsum = () => {
           
           <div className="sp-about-images">
             <img src="/images/gypsum-gyproc.png" alt="Interior Details" className="sp-main-img" />
-            <img src="/images/ceiling-4.png" alt="Interior Decor" className="sp-circle-img" />
+            <img src="/images/interior-work-new.jpg" alt="Interior Decor" className="sp-circle-img" />
             <div className="sp-play-btn-box">
               <PlayCircle size={40} fill="#24211E" color="#FFF" />
             </div>

@@ -62,7 +62,7 @@ const GetQuote = () => {
                 <option>Interior Work - Modular Kitchen & Furniture</option>
                 <option>Material Supply - Gypsum Boards</option>
                 <option>Material Supply - Panels</option>
-                <option>Material Supply - Decorative Materials</option>
+                <option>Material Supply - PVC TV Unit</option>
                 <option>Other / General Enquiry</option>
               </select>
             </div>

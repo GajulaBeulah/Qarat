@@ -12,7 +12,7 @@ const ProjectGallery = ({ category = "all" }) => {
     { src: "/images/ceiling-1.png", alt: "Modern False Ceiling", tags: ["ceiling"] },
     { src: "/images/ceiling-2.png", alt: "Cove Lighting Ceiling", tags: ["ceiling"] },
     { src: "/images/ceiling-3.png", alt: "Bedroom Geometric Ceiling", tags: ["ceiling"] },
-    { src: "/images/ceiling-4.png", alt: "Modern Cove Lighting", tags: ["ceiling"] },
+    { src: "/images/interior-work-new.jpg", alt: "Modern Cove Lighting", tags: ["ceiling"] },
     { src: "/images/ceiling-5.png", alt: "Ornate POP Ceiling with Fan", tags: ["ceiling"] },
     { src: "/images/ceiling-hero-new.png", alt: "Luxury Ceiling", tags: ["ceiling"] },
     { src: "/images/gypsum-partition.png", alt: "Gypsum Partition", tags: ["ceiling"] },
